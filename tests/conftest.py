@@ -17,7 +17,9 @@ def pytest_runtest_setup(item: pytest.Item) -> None:
     if "llm" in item.keywords:
         enable_socket()
     else:
-        disable_socket()
+        # allow_unix_socket: FastAPI's TestClient event loop uses an internal
+        # AF_UNIX socketpair — no network. TCP/UDP stay banned.
+        disable_socket(allow_unix_socket=True)
 
 
 # --- Fixture databases -------------------------------------------------------

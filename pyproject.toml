@@ -11,6 +11,7 @@ dependencies = [
     "dspy>=3.0",
     "fastapi>=0.115",
     "huggingface-hub>=0.30",
+    "optuna>=4.9.0",
     "pydantic-settings>=2.6",
     "python-dotenv>=1.0",
     "slowapi>=0.1.9",
@@ -28,7 +29,8 @@ dspyed = "dspyed.cli:main"
 [dependency-groups]
 dev = [
     "httpx>=0.28",
-    "pyarrow>=18",  # `dspyed download` only: parquet → JSON conversion, never at runtime
+    "httpx2>=2.7.0",
+    "pyarrow>=18", # `dspyed download` only: parquet → JSON conversion, never at runtime
     "pyright>=1.1.390",
     "pytest>=8.3",
     "pytest-socket>=0.7",
