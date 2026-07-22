@@ -1,0 +1,1009 @@
+{
+ "dataset": "spider",
+ "source_split": "dev",
+ "seed": 13,
+ "created": "2026-07-22",
+ "filter": "none",
+ "ids": [
+  {
+   "idx": 421,
+   "db_id": "museum_visit",
+   "question_sha1": "8dbf3426cd0becd7a33a7280975e9e25adff06e2"
+  },
+  {
+   "idx": 241,
+   "db_id": "flight_2",
+   "question_sha1": "8cace521204b03af8151b52394f812f82f86163b"
+  },
+  {
+   "idx": 647,
+   "db_id": "poker_player",
+   "question_sha1": "04af5ecf452e0ebcdaf9f46bc85571c2e56a663e"
+  },
+  {
+   "idx": 80,
+   "db_id": "pets_1",
+   "question_sha1": "80b095b37cd49aed3d0a9b102c8286b21a84522b"
+  },
+  {
+   "idx": 970,
+   "db_id": "dog_kennels",
+   "question_sha1": "7166cb0a110e668df707cf0938af6773a798d98a"
+  },
+  {
+   "idx": 135,
+   "db_id": "car_1",
+   "question_sha1": "6fe7737c96b96cf6ce24b313ca942f6c138140d8"
+  },
+  {
+   "idx": 697,
+   "db_id": "voter_1",
+   "question_sha1": "323244f8ea01240dcec246226298fbc65296f6a8"
+  },
+  {
+   "idx": 499,
+   "db_id": "battle_death",
+   "question_sha1": "a7cd4dfaaa8d6790831c073192c58f2019306970"
+  },
+  {
+   "idx": 38,
+   "db_id": "concert_singer",
+   "question_sha1": "88edd5dec09e616f40f0bb1f8ae11b6fe45c94d6"
+  },
+  {
+   "idx": 772,
+   "db_id": "world_1",
+   "question_sha1": "ca7a6cffedb4249de6fd3a2865354ad8af685bfe"
+  },
+  {
+   "idx": 281,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "31bf21ba17d0d8bf6108178f0372b17bf28cb47d"
+  },
+  {
+   "idx": 1033,
+   "db_id": "real_estate_properties",
+   "question_sha1": "ef979676b46052141b6e9bc8d25f89e1f4bd0aef"
+  },
+  {
+   "idx": 1013,
+   "db_id": "singer",
+   "question_sha1": "c5f27aeca7eb6f7c3b8d781d270fba1347e163f1"
+  },
+  {
+   "idx": 518,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "2e7efaf0ec85cdf5706fe58aca79add3d5b2baec"
+  },
+  {
+   "idx": 899,
+   "db_id": "network_1",
+   "question_sha1": "cfc2e1cebfb6b98ba076cc8eba1a2c5add806bad"
+  },
+  {
+   "idx": 482,
+   "db_id": "wta_1",
+   "question_sha1": "9a6553c51b239189eea232b2239a2231a34eae8d"
+  },
+  {
+   "idx": 855,
+   "db_id": "orchestra",
+   "question_sha1": "529c40f0a12eeb43b05f312e92baa283b70c3e19"
+  },
+  {
+   "idx": 303,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "7b3f7168982e16e67dce4077316c5ada35b7cb4c"
+  },
+  {
+   "idx": 397,
+   "db_id": "course_teach",
+   "question_sha1": "6f2ae3cb12ec30e8ecd48ea0fa32b416f2439406"
+  },
+  {
+   "idx": 632,
+   "db_id": "tvshow",
+   "question_sha1": "40c92ed87c22cb6083772444300e5821a778b20e"
+  },
+  {
+   "idx": 426,
+   "db_id": "museum_visit",
+   "question_sha1": "386d447c9b2b9c1fe8df08d62006fcecc415032b"
+  },
+  {
+   "idx": 233,
+   "db_id": "flight_2",
+   "question_sha1": "9ba411eed756254fe375d8caca17a7c7539c025b"
+  },
+  {
+   "idx": 684,
+   "db_id": "poker_player",
+   "question_sha1": "5bde5711c55442403edf9db88ce7ee50e0edaaae"
+  },
+  {
+   "idx": 46,
+   "db_id": "pets_1",
+   "question_sha1": "5f96de0f2f7e97dac69411809477db806b70e82f"
+  },
+  {
+   "idx": 927,
+   "db_id": "dog_kennels",
+   "question_sha1": "35cf87fda563c3e2d0cbab3dc809fc8fe1896a75"
+  },
+  {
+   "idx": 94,
+   "db_id": "car_1",
+   "question_sha1": "5c9b362b5c880af1ed832d05d18b27316a393399"
+  },
+  {
+   "idx": 699,
+   "db_id": "voter_1",
+   "question_sha1": "0311067e8ffbdbf5961f370b62575f3c979fb9db"
+  },
+  {
+   "idx": 495,
+   "db_id": "battle_death",
+   "question_sha1": "6b127483aa07c31cac45ce618f20a9b15c757aee"
+  },
+  {
+   "idx": 16,
+   "db_id": "concert_singer",
+   "question_sha1": "94b44ebf1b540f06e760ef0c01e1b1a510ac2806"
+  },
+  {
+   "idx": 767,
+   "db_id": "world_1",
+   "question_sha1": "e3910b111e8bb3b36a0185c04ff2a55d129877f6"
+  },
+  {
+   "idx": 282,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "859e5fa66c5e2f4a8936d6c095077c9677489fd3"
+  },
+  {
+   "idx": 1032,
+   "db_id": "real_estate_properties",
+   "question_sha1": "d9d0f32a5c76399b531f27b7daba9611d53741de"
+  },
+  {
+   "idx": 1005,
+   "db_id": "singer",
+   "question_sha1": "edbff89fb9f1c4aff8f314ea2464a99e06968cf8"
+  },
+  {
+   "idx": 581,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "1a6af648ff64599ad8cbc0a1768f2ff1e6c414ef"
+  },
+  {
+   "idx": 898,
+   "db_id": "network_1",
+   "question_sha1": "80e9d2e40102267cbfa1e85fa974a265fc15d194"
+  },
+  {
+   "idx": 447,
+   "db_id": "wta_1",
+   "question_sha1": "32f93afb4af48a7269b375392c45583671e28d61"
+  },
+  {
+   "idx": 825,
+   "db_id": "orchestra",
+   "question_sha1": "f1d56d170dd3feec1b3d55184e767f6981258d07"
+  },
+  {
+   "idx": 298,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "9bf05dcfc1304f33263a847b7222cfdace28f318"
+  },
+  {
+   "idx": 402,
+   "db_id": "course_teach",
+   "question_sha1": "d14b4d01e85d27d2d11bef87be971cd4d6c1677b"
+  },
+  {
+   "idx": 598,
+   "db_id": "tvshow",
+   "question_sha1": "47b91bdd3578d01a9c76c03c77f95fa057e2becd"
+  },
+  {
+   "idx": 415,
+   "db_id": "museum_visit",
+   "question_sha1": "b65cccf3bdc05e5d2049f97208dc3a16361175b1"
+  },
+  {
+   "idx": 183,
+   "db_id": "flight_2",
+   "question_sha1": "ca0b320d49f79b20215bf9b7c0a41dd6d92caa5a"
+  },
+  {
+   "idx": 649,
+   "db_id": "poker_player",
+   "question_sha1": "e70962ed3c524e6efbc75a78b1db22718e4bf7aa"
+  },
+  {
+   "idx": 69,
+   "db_id": "pets_1",
+   "question_sha1": "bd6c81ef3b8f3f5557b7cd8ab9539e9e561554cb"
+  },
+  {
+   "idx": 939,
+   "db_id": "dog_kennels",
+   "question_sha1": "aecc4139af9821ba9ad2638989de16094344635f"
+  },
+  {
+   "idx": 88,
+   "db_id": "car_1",
+   "question_sha1": "dc76d8a98ab6e78f6ffee456b5fe77e172486ef6"
+  },
+  {
+   "idx": 695,
+   "db_id": "voter_1",
+   "question_sha1": "82dbe618440a5289a31a6a5db72bce56737b8ecd"
+  },
+  {
+   "idx": 506,
+   "db_id": "battle_death",
+   "question_sha1": "fec3fee00b947e2247d2d23435438119c3d83904"
+  },
+  {
+   "idx": 35,
+   "db_id": "concert_singer",
+   "question_sha1": "0b8665195df0509a65ee6a21449975087cc7abc4"
+  },
+  {
+   "idx": 713,
+   "db_id": "world_1",
+   "question_sha1": "9b9e2d635e92f91e244f228b626512ba646c8f7c"
+  },
+  {
+   "idx": 293,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "307e0fed419cf330aa1c10d7c4e2c24f3c3afe23"
+  },
+  {
+   "idx": 1031,
+   "db_id": "real_estate_properties",
+   "question_sha1": "81156c2aa464f64da96a47256d9431e1fb233453"
+  },
+  {
+   "idx": 1018,
+   "db_id": "singer",
+   "question_sha1": "56826679caf7a26640128dd4d6281e3a4c1fda1f"
+  },
+  {
+   "idx": 558,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "7c29daf70dbb59297e0cc901711490b1b404600b"
+  },
+  {
+   "idx": 887,
+   "db_id": "network_1",
+   "question_sha1": "5f134c244887bcbd6677c9bf9f9d8f6169e6c043"
+  },
+  {
+   "idx": 440,
+   "db_id": "wta_1",
+   "question_sha1": "6f285342a6ae533d3f5759af9727d287a9f9e738"
+  },
+  {
+   "idx": 856,
+   "db_id": "orchestra",
+   "question_sha1": "5aba387cffa6fa01162b2ea578940c3d73864cf6"
+  },
+  {
+   "idx": 315,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "1b425232a42b9ff7b0c33e71f3e235b9b85fe72c"
+  },
+  {
+   "idx": 389,
+   "db_id": "course_teach",
+   "question_sha1": "f6f9e3ee475f370b7cad2f97d06245df2c913cbe"
+  },
+  {
+   "idx": 638,
+   "db_id": "tvshow",
+   "question_sha1": "35a64873cc270e507d0bf125c83e6c03548163b2"
+  },
+  {
+   "idx": 411,
+   "db_id": "museum_visit",
+   "question_sha1": "f0ce87d7c399edd582737de22562ce97aa99bb4e"
+  },
+  {
+   "idx": 258,
+   "db_id": "flight_2",
+   "question_sha1": "9ba6a04baf359c554c0085469c8b9282fe35d2b3"
+  },
+  {
+   "idx": 673,
+   "db_id": "poker_player",
+   "question_sha1": "8528c0f2874c8b12dc960edcac95fa0a01c8bcc4"
+  },
+  {
+   "idx": 74,
+   "db_id": "pets_1",
+   "question_sha1": "5e285088699a49f1a1cac337917a756b320322fa"
+  },
+  {
+   "idx": 963,
+   "db_id": "dog_kennels",
+   "question_sha1": "adf535d8041730b8da378f0ac3c6831fab38877c"
+  },
+  {
+   "idx": 97,
+   "db_id": "car_1",
+   "question_sha1": "3c4b38f71955ecb7db0048446186598c5f565f19"
+  },
+  {
+   "idx": 694,
+   "db_id": "voter_1",
+   "question_sha1": "09bee9c9d602c6d605262ef6f338b171c3981e9a"
+  },
+  {
+   "idx": 492,
+   "db_id": "battle_death",
+   "question_sha1": "45c02efcf0779841586796ec99bcb0486b9b63f5"
+  },
+  {
+   "idx": 14,
+   "db_id": "concert_singer",
+   "question_sha1": "9b7fe28710d2eb92c0222ab4f16f624f52d4997d"
+  },
+  {
+   "idx": 729,
+   "db_id": "world_1",
+   "question_sha1": "7584d23d795c687865ab4ada84e204b6cd6a09de"
+  },
+  {
+   "idx": 272,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "cbde9c9b3f888a2e18311be063450194fd39a09a"
+  },
+  {
+   "idx": 1030,
+   "db_id": "real_estate_properties",
+   "question_sha1": "d2f5bfbcb9420f02a282ba56beac77d005b4d1ac"
+  },
+  {
+   "idx": 1021,
+   "db_id": "singer",
+   "question_sha1": "0e523dd3fc808e102301dc8e4dd7b39751ba58cd"
+  },
+  {
+   "idx": 559,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "84e2252cf2ca5803aad40511ac9343ca9142c581"
+  },
+  {
+   "idx": 867,
+   "db_id": "network_1",
+   "question_sha1": "a6d3542a6d4001df2b34d472c5abca1bf64d3d50"
+  },
+  {
+   "idx": 476,
+   "db_id": "wta_1",
+   "question_sha1": "b36e02ad9db5ed247a850ae0dd9d560125232980"
+  },
+  {
+   "idx": 840,
+   "db_id": "orchestra",
+   "question_sha1": "b2675b92eae2ca911c712dad92f9ea23a210b202"
+  },
+  {
+   "idx": 335,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "84d3663f7cf7d617e5b43f6295e9bc5a9f5e6bf9"
+  },
+  {
+   "idx": 407,
+   "db_id": "course_teach",
+   "question_sha1": "e96cb33a6af5a376e01bd529d9cb713581c44098"
+  },
+  {
+   "idx": 645,
+   "db_id": "tvshow",
+   "question_sha1": "bb32b0d889b9ac064295f252c3d27fc5d936ee2a"
+  },
+  {
+   "idx": 423,
+   "db_id": "museum_visit",
+   "question_sha1": "7a18299cf7dade6404a2b289905e88f2886c93c7"
+  },
+  {
+   "idx": 204,
+   "db_id": "flight_2",
+   "question_sha1": "b3e7710140e216fa5df869b854f511b88fbaccef"
+  },
+  {
+   "idx": 658,
+   "db_id": "poker_player",
+   "question_sha1": "6e35c29eee4a7dd174234903c8acc2f5d37dadc1"
+  },
+  {
+   "idx": 81,
+   "db_id": "pets_1",
+   "question_sha1": "f7fc8fe554165f2adfae3fe3e85bcebb53b5ac7f"
+  },
+  {
+   "idx": 984,
+   "db_id": "dog_kennels",
+   "question_sha1": "19f8cec9414add215f0db68d6b9ec858aaf24fd0"
+  },
+  {
+   "idx": 163,
+   "db_id": "car_1",
+   "question_sha1": "b54c5cbef58969c1023edf324dce76584f730ac4"
+  },
+  {
+   "idx": 701,
+   "db_id": "voter_1",
+   "question_sha1": "a7f3bda23c199c21e7265f1f9b56dc4edae99123"
+  },
+  {
+   "idx": 496,
+   "db_id": "battle_death",
+   "question_sha1": "a624fc9ee188353ed89c9874b6d397629a7829fa"
+  },
+  {
+   "idx": 32,
+   "db_id": "concert_singer",
+   "question_sha1": "596befdc07b431f2fd1cd51d11871e761735c18e"
+  },
+  {
+   "idx": 710,
+   "db_id": "world_1",
+   "question_sha1": "1e26305a3c22be5b7316fc09b663c9cd621ba0d6"
+  },
+  {
+   "idx": 284,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "03b4b592746b7487507dd0fcfa336d4aad4e5aaf"
+  },
+  {
+   "idx": 1020,
+   "db_id": "singer",
+   "question_sha1": "98e29983ff6b0cf918523cd597f7480c34165b3a"
+  },
+  {
+   "idx": 575,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "91ddcc65c38722128c5d825b2d788f7f706b07fc"
+  },
+  {
+   "idx": 880,
+   "db_id": "network_1",
+   "question_sha1": "1c6fd76f42b29d90a86e2712cc954c44478e1d9e"
+  },
+  {
+   "idx": 456,
+   "db_id": "wta_1",
+   "question_sha1": "6abcc8fe56355eee7f9aa2a58d82a43d595e2739"
+  },
+  {
+   "idx": 843,
+   "db_id": "orchestra",
+   "question_sha1": "3f34dab1c534b191616bbd8147561668f5526fa6"
+  },
+  {
+   "idx": 353,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "b8b41c11c91e95c6439e95597a2838d8c9b621fa"
+  },
+  {
+   "idx": 384,
+   "db_id": "course_teach",
+   "question_sha1": "f434492eeb8f4415ba098937b7f12fef3bb27b29"
+  },
+  {
+   "idx": 623,
+   "db_id": "tvshow",
+   "question_sha1": "8d66a515dbf570e0c91cf520fda36d89a647d093"
+  },
+  {
+   "idx": 420,
+   "db_id": "museum_visit",
+   "question_sha1": "608ab384f7291d5e8668bb5635a2ec69102df110"
+  },
+  {
+   "idx": 254,
+   "db_id": "flight_2",
+   "question_sha1": "aada77824a4aaeb8a9ad99ad05ce0125f20d7fa8"
+  },
+  {
+   "idx": 661,
+   "db_id": "poker_player",
+   "question_sha1": "bd0110121ce5779f89015e36396308d3258e6179"
+  },
+  {
+   "idx": 85,
+   "db_id": "pets_1",
+   "question_sha1": "fb4f31683bddd90088ce7f874feaa9fc3385329c"
+  },
+  {
+   "idx": 943,
+   "db_id": "dog_kennels",
+   "question_sha1": "e250e2df99e3dc6c661aaf45b8ef9f3172480397"
+  },
+  {
+   "idx": 131,
+   "db_id": "car_1",
+   "question_sha1": "3e732d7ea87b82c3064e6d99953717e46d9d4973"
+  },
+  {
+   "idx": 687,
+   "db_id": "voter_1",
+   "question_sha1": "852e9db95a48bea4312f6740732b710c4a4cba33"
+  },
+  {
+   "idx": 493,
+   "db_id": "battle_death",
+   "question_sha1": "9d0322003246d47391c6c85d18b4679896cf4096"
+  },
+  {
+   "idx": 17,
+   "db_id": "concert_singer",
+   "question_sha1": "b48147bd1be6d2cb6a95de653a38d3c281654b2e"
+  },
+  {
+   "idx": 757,
+   "db_id": "world_1",
+   "question_sha1": "14de6552dda0933d8433f793323ccc0e35a64c06"
+  },
+  {
+   "idx": 279,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "1b43bd9425b7b4438d871a3eb6985dee6807fe29"
+  },
+  {
+   "idx": 1006,
+   "db_id": "singer",
+   "question_sha1": "d46bbf2ca54099b8b3f81e88856afb481231c09a"
+  },
+  {
+   "idx": 582,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "3d6707afda55ce1a32f0abcede55e7cdb5e5837f"
+  },
+  {
+   "idx": 904,
+   "db_id": "network_1",
+   "question_sha1": "6498be8762b873b18efdf8206bbee8695d0bef21"
+  },
+  {
+   "idx": 431,
+   "db_id": "wta_1",
+   "question_sha1": "5927fa1fd8e227bf772ad8aa5183599a4a651c58"
+  },
+  {
+   "idx": 824,
+   "db_id": "orchestra",
+   "question_sha1": "140221e3de8f8efc4aa220c71cf895d2d9985cff"
+  },
+  {
+   "idx": 320,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "e6f71eec44c47bda49930adb39a44d1d68128fe7"
+  },
+  {
+   "idx": 406,
+   "db_id": "course_teach",
+   "question_sha1": "172cf60df7106796966f07e73e8851a7438620dd"
+  },
+  {
+   "idx": 587,
+   "db_id": "tvshow",
+   "question_sha1": "16d02c550768b903fbc0fbc4611dde5e2f382f4b"
+  },
+  {
+   "idx": 417,
+   "db_id": "museum_visit",
+   "question_sha1": "481b6a5e5d588acc84145292ff1fce2f79fea2ae"
+  },
+  {
+   "idx": 221,
+   "db_id": "flight_2",
+   "question_sha1": "1c17ec8449b049e73ff7d08c73976b182ce1d6cd"
+  },
+  {
+   "idx": 671,
+   "db_id": "poker_player",
+   "question_sha1": "0579ceef75d9951f3dd83f8480e1f6a9a7667d86"
+  },
+  {
+   "idx": 50,
+   "db_id": "pets_1",
+   "question_sha1": "5e867635d87adbf0fa71cfefbaad4fd41b5ee96a"
+  },
+  {
+   "idx": 974,
+   "db_id": "dog_kennels",
+   "question_sha1": "30b658bf12a00685d00e45489bb76ff3b7cdd6c3"
+  },
+  {
+   "idx": 124,
+   "db_id": "car_1",
+   "question_sha1": "fb96a7f05576d19f7bb011ef707ba5ef2b81d8b4"
+  },
+  {
+   "idx": 688,
+   "db_id": "voter_1",
+   "question_sha1": "50dc8ac7d576a43d942e7687d4328d6aeec930a4"
+  },
+  {
+   "idx": 501,
+   "db_id": "battle_death",
+   "question_sha1": "af621437088f8dfa92ce9fd249c414bca9fc3c8b"
+  },
+  {
+   "idx": 0,
+   "db_id": "concert_singer",
+   "question_sha1": "b808a25bd2a49fae2d54080299817be576fc774b"
+  },
+  {
+   "idx": 707,
+   "db_id": "world_1",
+   "question_sha1": "74ac98d5c6df15fcc7f77913a71819e48011f163"
+  },
+  {
+   "idx": 285,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "0cbfb6e024b9708b3c19b524c3a384258e76b3b8"
+  },
+  {
+   "idx": 1012,
+   "db_id": "singer",
+   "question_sha1": "4cec33991addfa441db28fdad61faf79c313ca94"
+  },
+  {
+   "idx": 509,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "fd3917b8b37d655e9a63a0dd84afa8e563beae25"
+  },
+  {
+   "idx": 891,
+   "db_id": "network_1",
+   "question_sha1": "5eb43b0207ac0481f8a3b31f74e57702763ee8d7"
+  },
+  {
+   "idx": 464,
+   "db_id": "wta_1",
+   "question_sha1": "f68621145c2b840cf5d7906ee830363da41def06"
+  },
+  {
+   "idx": 861,
+   "db_id": "orchestra",
+   "question_sha1": "cb652f18cc83d8120169922af9b736fafc6e29a8"
+  },
+  {
+   "idx": 321,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "84d69289fb7bc23e2bfb9f1a3c5ea0b0a78a776e"
+  },
+  {
+   "idx": 393,
+   "db_id": "course_teach",
+   "question_sha1": "1c040a3e9fa43b802e705b7e087c218054c3cc4e"
+  },
+  {
+   "idx": 590,
+   "db_id": "tvshow",
+   "question_sha1": "5ef53daa6cc2cc23d7bc4e33c1321397333d4bf0"
+  },
+  {
+   "idx": 425,
+   "db_id": "museum_visit",
+   "question_sha1": "3edfb8d94e3c059ef60bd2f2ac00b61c51b6f1d9"
+  },
+  {
+   "idx": 179,
+   "db_id": "flight_2",
+   "question_sha1": "a9d15951cd1717f9ccd381c1e61dc4eb65135a83"
+  },
+  {
+   "idx": 656,
+   "db_id": "poker_player",
+   "question_sha1": "6191d76f1608d8618bf0113e70622c1a203cc3b7"
+  },
+  {
+   "idx": 53,
+   "db_id": "pets_1",
+   "question_sha1": "bf941f3302dc3380dd80e2e27a0689082e159d91"
+  },
+  {
+   "idx": 964,
+   "db_id": "dog_kennels",
+   "question_sha1": "b82ab6d1913c1768e63d7b6d8a83b4e178120bb5"
+  },
+  {
+   "idx": 164,
+   "db_id": "car_1",
+   "question_sha1": "19eee793d6e6b7c67a40ad5e5f33ccd5f8afbaa5"
+  },
+  {
+   "idx": 696,
+   "db_id": "voter_1",
+   "question_sha1": "1b8858333e0a74d9926d25ba5e89e285b27e439b"
+  },
+  {
+   "idx": 503,
+   "db_id": "battle_death",
+   "question_sha1": "e38e4bf0024fa3637ea800e93a6a7cbaf4ad15f8"
+  },
+  {
+   "idx": 5,
+   "db_id": "concert_singer",
+   "question_sha1": "815b9f53d05fc642160af0eee5e1a05dd8b2e45b"
+  },
+  {
+   "idx": 758,
+   "db_id": "world_1",
+   "question_sha1": "aacc03a1d2559e160d85e5e085912ebfa51f6068"
+  },
+  {
+   "idx": 262,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "6e363e349a4130a20064058de43a3027b50d0a9f"
+  },
+  {
+   "idx": 1028,
+   "db_id": "singer",
+   "question_sha1": "ad8a07949b1a8e176d42be4ff218b3a3dcb6c622"
+  },
+  {
+   "idx": 569,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "75b8bbe7e8301917d2cb4ed315e50abc0affab72"
+  },
+  {
+   "idx": 876,
+   "db_id": "network_1",
+   "question_sha1": "759075cda7b560d34ae55d468ca9dd5e3de67f28"
+  },
+  {
+   "idx": 438,
+   "db_id": "wta_1",
+   "question_sha1": "f82c1098600dbcd99a66b85c1e52608c01415585"
+  },
+  {
+   "idx": 822,
+   "db_id": "orchestra",
+   "question_sha1": "eaacb676c263b587f61baf9b1d65ed33dfef7453"
+  },
+  {
+   "idx": 308,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "5100b6c31e9c2a914fa68d2deacaad26002a0a01"
+  },
+  {
+   "idx": 390,
+   "db_id": "course_teach",
+   "question_sha1": "f6f598de6c9c8408dc18c8e93b61e784e56494e5"
+  },
+  {
+   "idx": 597,
+   "db_id": "tvshow",
+   "question_sha1": "78dcf6701a30e6ec0df7863587ec27ee36b3d823"
+  },
+  {
+   "idx": 416,
+   "db_id": "museum_visit",
+   "question_sha1": "0b3736570be994757e9187f1ac6a540626b520aa"
+  },
+  {
+   "idx": 229,
+   "db_id": "flight_2",
+   "question_sha1": "3512483d7a3fcf98b24dcbd7e4f52548c219883d"
+  },
+  {
+   "idx": 686,
+   "db_id": "poker_player",
+   "question_sha1": "b36d112220b893739ebac999f523c98a38e79ab7"
+  },
+  {
+   "idx": 47,
+   "db_id": "pets_1",
+   "question_sha1": "709599d6879c0e5dd84b705a730cbe38cf964902"
+  },
+  {
+   "idx": 961,
+   "db_id": "dog_kennels",
+   "question_sha1": "b7c2c9c5e242ff0d3a49375c9e5b2c24564d9bb2"
+  },
+  {
+   "idx": 132,
+   "db_id": "car_1",
+   "question_sha1": "5246ad3939fabd83008ad46a7792a56ba3615f59"
+  },
+  {
+   "idx": 691,
+   "db_id": "voter_1",
+   "question_sha1": "bbdc968f7b67235b56493e448d97bb8101334873"
+  },
+  {
+   "idx": 497,
+   "db_id": "battle_death",
+   "question_sha1": "116b18b5616df855da35510d2d0b7f8729573cc9"
+  },
+  {
+   "idx": 9,
+   "db_id": "concert_singer",
+   "question_sha1": "a5d106935aff7ec94b592283776425f6a7822037"
+  },
+  {
+   "idx": 787,
+   "db_id": "world_1",
+   "question_sha1": "3f8b9cf74bacadda6d7342340b65f9244633629f"
+  },
+  {
+   "idx": 294,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "1082e84af87c5a25b2f8ccadd50c10e5e43b6253"
+  },
+  {
+   "idx": 1024,
+   "db_id": "singer",
+   "question_sha1": "b3ce6f0ac7f33386f5185c42e10debb9d99882b6"
+  },
+  {
+   "idx": 537,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "180cf206adba237d33051df58ed961d3889cd746"
+  },
+  {
+   "idx": 907,
+   "db_id": "network_1",
+   "question_sha1": "3bb4d51302049bd03d1af725e23774f55a2687dc"
+  },
+  {
+   "idx": 479,
+   "db_id": "wta_1",
+   "question_sha1": "ba55d3561a642d94fae12fbbe7c3c956401a88c3"
+  },
+  {
+   "idx": 858,
+   "db_id": "orchestra",
+   "question_sha1": "1a7e4215ca268dec3bb5914f21e9391fd2cbc9c4"
+  },
+  {
+   "idx": 379,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "a7a7c36430a0b1fb80f7c3bf8c53969a010f9389"
+  },
+  {
+   "idx": 408,
+   "db_id": "course_teach",
+   "question_sha1": "ba80132bc8999b507d6a06f927e2d8e3c1a9d67d"
+  },
+  {
+   "idx": 629,
+   "db_id": "tvshow",
+   "question_sha1": "095626f0a79e3deaea7320b1334abd46a06f7007"
+  },
+  {
+   "idx": 427,
+   "db_id": "museum_visit",
+   "question_sha1": "8a13564d11b10fa37731a9b77640718a9653774c"
+  },
+  {
+   "idx": 225,
+   "db_id": "flight_2",
+   "question_sha1": "070e912c13d4dee06809d0ea2123409d8fba7643"
+  },
+  {
+   "idx": 677,
+   "db_id": "poker_player",
+   "question_sha1": "6868bbbc11951769aaa479db7dad91551a224381"
+  },
+  {
+   "idx": 59,
+   "db_id": "pets_1",
+   "question_sha1": "53aa856e378c892979e48e84512cee4538ebb7a3"
+  },
+  {
+   "idx": 945,
+   "db_id": "dog_kennels",
+   "question_sha1": "a67deade7caed10c43fa11fde4004f51bb287fa4"
+  },
+  {
+   "idx": 174,
+   "db_id": "car_1",
+   "question_sha1": "cde9013dd20661c75f5835b5fbc26445620d0cba"
+  },
+  {
+   "idx": 700,
+   "db_id": "voter_1",
+   "question_sha1": "bd35242925c6cd838d57a9976ab6a1bb831a82af"
+  },
+  {
+   "idx": 502,
+   "db_id": "battle_death",
+   "question_sha1": "dcac7fdcd25697c63c2085f3d276defd182e70af"
+  },
+  {
+   "idx": 18,
+   "db_id": "concert_singer",
+   "question_sha1": "4a780b2793abc9105e32c27a88bd3573b28b1062"
+  },
+  {
+   "idx": 813,
+   "db_id": "world_1",
+   "question_sha1": "fc4e367560be0889d43c8720e3d97e8080d901b3"
+  },
+  {
+   "idx": 269,
+   "db_id": "employee_hire_evaluation",
+   "question_sha1": "9ee019edd5c7b2f280bbf259b23a4c931daddd11"
+  },
+  {
+   "idx": 1015,
+   "db_id": "singer",
+   "question_sha1": "d9ae14fa43aee004fa6793d2886096e9deff80a4"
+  },
+  {
+   "idx": 553,
+   "db_id": "student_transcripts_tracking",
+   "question_sha1": "c2e31d83c83d90286972a47548c19e7d5232365d"
+  },
+  {
+   "idx": 893,
+   "db_id": "network_1",
+   "question_sha1": "2f5f8e70a2531cdcdbce18864cd9242336533b50"
+  },
+  {
+   "idx": 460,
+   "db_id": "wta_1",
+   "question_sha1": "7adc2f62f38ef771e962ef5ca6e4497866955a76"
+  },
+  {
+   "idx": 832,
+   "db_id": "orchestra",
+   "question_sha1": "71a100d5be58dfe436967921aabf98dbfb508ef0"
+  },
+  {
+   "idx": 340,
+   "db_id": "cre_Doc_Template_Mgt",
+   "question_sha1": "617feb74a7f9a5387857436f17ac7a9fc07f1e2e"
+  },
+  {
+   "idx": 392,
+   "db_id": "course_teach",
+   "question_sha1": "2c639d99468ccaf7def78fd2bb218de10a2009dc"
+  },
+  {
+   "idx": 637,
+   "db_id": "tvshow",
+   "question_sha1": "8c1848c9b3d823fc4db1cd61043adc8375a94b57"
+  },
+  {
+   "idx": 424,
+   "db_id": "museum_visit",
+   "question_sha1": "184af65aa88f073f378752288efd7abd7d94ce1f"
+  },
+  {
+   "idx": 181,
+   "db_id": "flight_2",
+   "question_sha1": "fd16ab61849fd831973f7cb439218d0354052b2d"
+  },
+  {
+   "idx": 683,
+   "db_id": "poker_player",
+   "question_sha1": "f45da0d551b88bd727b765fd378090d6e4af38fa"
+  },
+  {
+   "idx": 67,
+   "db_id": "pets_1",
+   "question_sha1": "504845ddd5437ec2f8d26991c3af9c232214afae"
+  },
+  {
+   "idx": 925,
+   "db_id": "dog_kennels",
+   "question_sha1": "0ea1cb2d61c5cf7d2b82625909c83bb1f1aa9d49"
+  },
+  {
+   "idx": 110,
+   "db_id": "car_1",
+   "question_sha1": "c5afad675e16da883590d66506772500ce46c627"
+  }
+ ]
+}

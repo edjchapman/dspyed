@@ -1,0 +1,1009 @@
+{
+ "dataset": "spider",
+ "source_split": "train",
+ "seed": 13,
+ "created": "2026-07-22",
+ "filter": "gold_executes_nonempty",
+ "ids": [
+  {
+   "idx": 1963,
+   "db_id": "products_for_hire",
+   "question_sha1": "79b2ee87f700699eb0b3eb88bedc1714accb1aea"
+  },
+  {
+   "idx": 3069,
+   "db_id": "loan_1",
+   "question_sha1": "7ad322d5bef90ee1d98613cd0aaa8e7812bb76f5"
+  },
+  {
+   "idx": 4622,
+   "db_id": "customers_campaigns_ecommerce",
+   "question_sha1": "e54f11d07201ef971049186e1bcc83c3b3db7aca"
+  },
+  {
+   "idx": 1630,
+   "db_id": "wedding",
+   "question_sha1": "e47d6bfa5a553f19958f3039d72d052359f126f3"
+  },
+  {
+   "idx": 2851,
+   "db_id": "customer_deliveries",
+   "question_sha1": "2e2b73ce9a7b65ba1f4c223d66531889dfb84788"
+  },
+  {
+   "idx": 3779,
+   "db_id": "e_learning",
+   "question_sha1": "af16efeb02d55cfee24175cf5e2e35e80ff21c75"
+  },
+  {
+   "idx": 4605,
+   "db_id": "entertainment_awards",
+   "question_sha1": "a14d4edc6b80b96c18d9dfd149a08ee9f958077e"
+  },
+  {
+   "idx": 2285,
+   "db_id": "entrepreneur",
+   "question_sha1": "a293b0a6db398c716003eab11df94fb46cfeed60"
+  },
+  {
+   "idx": 6192,
+   "db_id": "music_4",
+   "question_sha1": "b5fbb329a8d41ea37ff292225d2aa8f709d35b1f"
+  },
+  {
+   "idx": 1546,
+   "db_id": "insurance_and_eClaims",
+   "question_sha1": "4994803751e67d90a3dd2ee75d0c508bb83c4068"
+  },
+  {
+   "idx": 1357,
+   "db_id": "college_2",
+   "question_sha1": "abb36b7c71c674ddd096a665bc59cb28e5e751c7"
+  },
+  {
+   "idx": 1896,
+   "db_id": "school_finance",
+   "question_sha1": "1436edd853f0c36085376149ba1a260091ded6f3"
+  },
+  {
+   "idx": 3304,
+   "db_id": "college_1",
+   "question_sha1": "57019034eea2b3e2390bf9eea8845afb316194ce"
+  },
+  {
+   "idx": 1178,
+   "db_id": "election_representative",
+   "question_sha1": "7f119a0f9394e0ed6b67999d70224852c15babcf"
+  },
+  {
+   "idx": 1560,
+   "db_id": "customers_and_invoices",
+   "question_sha1": "8b9143711c41ce80402936f33f7a896a639b2989"
+  },
+  {
+   "idx": 4367,
+   "db_id": "tracking_grants_for_research",
+   "question_sha1": "971ebe7af5a8939560352e1404b2e51b649a3d5f"
+  },
+  {
+   "idx": 1234,
+   "db_id": "apartment_rentals",
+   "question_sha1": "ffa125b97e72199628b595d97f4e7504ac71b03d"
+  },
+  {
+   "idx": 1315,
+   "db_id": "performance_attendance",
+   "question_sha1": "57f15c4dc782e2722908f1fecea6d76be8d52eed"
+  },
+  {
+   "idx": 4661,
+   "db_id": "college_3",
+   "question_sha1": "bb9094d60b6e6f14cea210367aed1f53fb587403"
+  },
+  {
+   "idx": 3629,
+   "db_id": "baseball_1",
+   "question_sha1": "cf764e6c92552bc828d525431c6a9ac2366d04f4"
+  },
+  {
+   "idx": 6337,
+   "db_id": "e_government",
+   "question_sha1": "9fc6367255165c375a0ac41a478c57bf8d98c751"
+  },
+  {
+   "idx": 3152,
+   "db_id": "assets_maintenance",
+   "question_sha1": "42cfdc43d963d3dc32e11935582e729a1d0939c4"
+  },
+  {
+   "idx": 3,
+   "db_id": "department_management",
+   "question_sha1": "4ae7edf751048c15fd7e79f530323f1732f89b52"
+  },
+  {
+   "idx": 2711,
+   "db_id": "storm_record",
+   "question_sha1": "3ff88fdc7130b21b95a48beb5592f0d217b0ef4b"
+  },
+  {
+   "idx": 3587,
+   "db_id": "music_1",
+   "question_sha1": "6b4dafcd28ca3bb08d2af6a2c731692da625f829"
+  },
+  {
+   "idx": 5840,
+   "db_id": "workshop_paper",
+   "question_sha1": "f3e73425e0c55c2576b3d2823def59361ed826b9"
+  },
+  {
+   "idx": 1842,
+   "db_id": "browser_web",
+   "question_sha1": "9c7df6adb62327d1970f2ac0ea99db24b15c9205"
+  },
+  {
+   "idx": 4932,
+   "db_id": "store_product",
+   "question_sha1": "906542523d2ad73cd8bb4c31289c00b8dd8c0a8f"
+  },
+  {
+   "idx": 1746,
+   "db_id": "gymnast",
+   "question_sha1": "0dd9cf69158eb3e0f918a35bf1a1da5b523bdfed"
+  },
+  {
+   "idx": 744,
+   "db_id": "customers_card_transactions",
+   "question_sha1": "11e167369bb86574508e8517483f994ff1ec6f98"
+  },
+  {
+   "idx": 3362,
+   "db_id": "sports_competition",
+   "question_sha1": "2f76178b374b6db79ab99bc4c0c3f79dd613beba"
+  },
+  {
+   "idx": 1095,
+   "db_id": "match_season",
+   "question_sha1": "3c3559191774ce23fc40df8d7418bdc897a01fb5"
+  },
+  {
+   "idx": 872,
+   "db_id": "chinook_1",
+   "question_sha1": "96f9c51fce1b2ca4fa66dc5ab7f9e3c3541c52a5"
+  },
+  {
+   "idx": 5559,
+   "db_id": "products_gen_characteristics",
+   "question_sha1": "d1a32d0a0e15d4902d8f2409f3a4cf524ae1f2ce"
+  },
+  {
+   "idx": 2039,
+   "db_id": "party_people",
+   "question_sha1": "383db3485a7555b390d1fd66b4db86875d470da3"
+  },
+  {
+   "idx": 2223,
+   "db_id": "formula_1",
+   "question_sha1": "025949edc6dd5270c1f10a558119d39d669b6e9d"
+  },
+  {
+   "idx": 322,
+   "db_id": "product_catalog",
+   "question_sha1": "870f84a72daf8a405e965e314ded444eeaeead82"
+  },
+  {
+   "idx": 5988,
+   "db_id": "game_1",
+   "question_sha1": "61bd6b0fc9ea19781cc4ea0daeb7f99e0b2d0470"
+  },
+  {
+   "idx": 2429,
+   "db_id": "candidate_poll",
+   "question_sha1": "ab39776db1a5de53e8ee8450186ab67755229384"
+  },
+  {
+   "idx": 2814,
+   "db_id": "news_report",
+   "question_sha1": "3d21640bd6bbd6054bcac1ecca6aade896e3f1e5"
+  },
+  {
+   "idx": 4779,
+   "db_id": "department_store",
+   "question_sha1": "36fc171e126b4a81cdcba93d6f69a14c685e4d39"
+  },
+  {
+   "idx": 2106,
+   "db_id": "cre_Doc_Control_Systems",
+   "question_sha1": "aa577bb87eb601769475e7a2eb2ebf41299bd7ce"
+  },
+  {
+   "idx": 4590,
+   "db_id": "solvency_ii",
+   "question_sha1": "1df510c096c5064e1ad9a3301d6609884917274e"
+  },
+  {
+   "idx": 2921,
+   "db_id": "icfp_1",
+   "question_sha1": "37867caed526e6778fa03ff56950fa7e7c7bdc55"
+  },
+  {
+   "idx": 4449,
+   "db_id": "network_2",
+   "question_sha1": "601e0afcbc1808427affa299bbc7fe49666f7efe"
+  },
+  {
+   "idx": 6422,
+   "db_id": "cre_Docs_and_Epenses",
+   "question_sha1": "73462861ed78e52b6e70f60d059ebde6b9318f35"
+  },
+  {
+   "idx": 6886,
+   "db_id": "tracking_orders",
+   "question_sha1": "49d76ce39526ce8d35d9053be4a5f43854d89ce2"
+  },
+  {
+   "idx": 2326,
+   "db_id": "csu_1",
+   "question_sha1": "685c706112168d1da3ca69afbdd80390c7815534"
+  },
+  {
+   "idx": 1152,
+   "db_id": "body_builder",
+   "question_sha1": "807e1b73fa0fc790d7489829db904fc36db1b7c2"
+  },
+  {
+   "idx": 1932,
+   "db_id": "cinema",
+   "question_sha1": "874a14bd7bb932c5132ade085e79df5ff8019bd7"
+  },
+  {
+   "idx": 509,
+   "db_id": "allergy_1",
+   "question_sha1": "14f3a1a78e8b102bc6fa89796cdfb8b3b60ca7a0"
+  },
+  {
+   "idx": 3878,
+   "db_id": "insurance_policies",
+   "question_sha1": "6943b82a9613efc194be93de05bbedfd33b4e1bb"
+  },
+  {
+   "idx": 3172,
+   "db_id": "station_weather",
+   "question_sha1": "5aa4bc5a0355a77e802488ab083d15ee8bb3ce21"
+  },
+  {
+   "idx": 6751,
+   "db_id": "activity_1",
+   "question_sha1": "cab11ea0e37d67e32f17b97d8b1d5d195128070e"
+  },
+  {
+   "idx": 1994,
+   "db_id": "gas_company",
+   "question_sha1": "63861c5955fa2d23e664afff1bd2f6bced2b0e3c"
+  },
+  {
+   "idx": 5410,
+   "db_id": "shop_membership",
+   "question_sha1": "4773690c15718e2f51a4c90bfdb76a35de2eb620"
+  },
+  {
+   "idx": 2323,
+   "db_id": "perpetrator",
+   "question_sha1": "b354ccb623e5c033686af20633bcaec79115302b"
+  },
+  {
+   "idx": 4484,
+   "db_id": "decoration_competition",
+   "question_sha1": "e9603f16109af21c88e91804a301a69b8fea1c20"
+  },
+  {
+   "idx": 4218,
+   "db_id": "cre_Doc_Tracking_DB",
+   "question_sha1": "aae20ad03ea451a479a2efdd572771aa935f0fa9"
+  },
+  {
+   "idx": 6945,
+   "db_id": "architecture",
+   "question_sha1": "366f411191544e8377dc0212a620f441f47f4f40"
+  },
+  {
+   "idx": 196,
+   "db_id": "bike_1",
+   "question_sha1": "521ba30d1f1f4a0ea0883565562f34edbe5f618c"
+  },
+  {
+   "idx": 4096,
+   "db_id": "company_employee",
+   "question_sha1": "e5c7020eea7035d39acd1cb0cb3d54f3f7016322"
+  },
+  {
+   "idx": 2666,
+   "db_id": "party_host",
+   "question_sha1": "c0a7fe0e1665810ef9f52f784b3f8352083ca302"
+  },
+  {
+   "idx": 4572,
+   "db_id": "company_office",
+   "question_sha1": "179df67346c9db729192aff037a629c996e95652"
+  },
+  {
+   "idx": 3942,
+   "db_id": "hospital_1",
+   "question_sha1": "8d7566394f9683a1c4f0fd02981d761eaf475067"
+  },
+  {
+   "idx": 5891,
+   "db_id": "cre_Theme_park",
+   "question_sha1": "68f8c57258b99f9504baebf3a6a8f3eae0a5ca98"
+  },
+  {
+   "idx": 760,
+   "db_id": "race_track",
+   "question_sha1": "bf19e79c412dd7c6827af0247f76fb5c3ac6fca9"
+  },
+  {
+   "idx": 5606,
+   "db_id": "swimming",
+   "question_sha1": "0c29357c16fa2b0fb05128a5f4080e3e4713ed71"
+  },
+  {
+   "idx": 2797,
+   "db_id": "election",
+   "question_sha1": "5a63cac55af3ffc327994b306896d4752f5c6352"
+  },
+  {
+   "idx": 560,
+   "db_id": "store_1",
+   "question_sha1": "dcabb8c6ee2efd75b512a0850fc036363c07a7d8"
+  },
+  {
+   "idx": 4035,
+   "db_id": "student_1",
+   "question_sha1": "b48f68f327b93cadd411afe6492b608787dfbe66"
+  },
+  {
+   "idx": 6873,
+   "db_id": "flight_4",
+   "question_sha1": "c6bdbebebe74b9b006f4e550fd86becdb96a5576"
+  },
+  {
+   "idx": 283,
+   "db_id": "twitter_1",
+   "question_sha1": "13bfbb3384968f64fedc42fc6377ba5bf94c057e"
+  },
+  {
+   "idx": 5040,
+   "db_id": "soccer_2",
+   "question_sha1": "69cf9a6f2034e859c7fde1ef3a594c7f18de266f"
+  },
+  {
+   "idx": 2820,
+   "db_id": "restaurant_1",
+   "question_sha1": "bcce8757b91f59011e147bc2d74e0c66cc4f3cc5"
+  },
+  {
+   "idx": 1848,
+   "db_id": "wrestler",
+   "question_sha1": "ec7d9f65d38081503490af89119b97a83bca9bc8"
+  },
+  {
+   "idx": 3403,
+   "db_id": "manufacturer",
+   "question_sha1": "4b773591052e3629e76d466e4515f963a9b171eb"
+  },
+  {
+   "idx": 2541,
+   "db_id": "county_public_safety",
+   "question_sha1": "26811394a9e4b64dfc047a058dd79e7bd59f4c6d"
+  },
+  {
+   "idx": 5460,
+   "db_id": "voter_2",
+   "question_sha1": "aa9fc1a2652ec14bfdb3f9c2f9919687430e3d29"
+  },
+  {
+   "idx": 2131,
+   "db_id": "company_1",
+   "question_sha1": "26ea445e9f7cd44c0b5ed8bc933802d2578637fd"
+  },
+  {
+   "idx": 2581,
+   "db_id": "inn_1",
+   "question_sha1": "691e0f87bc192b92f917658ad06398cfd2f9d7d5"
+  },
+  {
+   "idx": 3719,
+   "db_id": "mountain_photos",
+   "question_sha1": "50de30cffd995f4d74734b21e51aa40ffb75fef7"
+  },
+  {
+   "idx": 4155,
+   "db_id": "film_rank",
+   "question_sha1": "a22670a53e04d6ed5be8364ecf322283994bab7e"
+  },
+  {
+   "idx": 57,
+   "db_id": "student_assessment",
+   "question_sha1": "30f659177296838579c92381a8e1682643f59f87"
+  },
+  {
+   "idx": 5328,
+   "db_id": "manufactory_1",
+   "question_sha1": "219f45ec88c4b42e826bf7c066472e2fda772e2a"
+  },
+  {
+   "idx": 3733,
+   "db_id": "program_share",
+   "question_sha1": "3a13a7cfad1d24514c95bea52b335166d651da43"
+  },
+  {
+   "idx": 1667,
+   "db_id": "theme_gallery",
+   "question_sha1": "bdf3a628811c77c649dbb8b6e50d221d31f16f73"
+  },
+  {
+   "idx": 6240,
+   "db_id": "ship_1",
+   "question_sha1": "38883b4901a6b0c43d690e02c3ff2069a23f0048"
+  },
+  {
+   "idx": 1033,
+   "db_id": "phone_1",
+   "question_sha1": "e351d3eb445a1840a162e7b4094bc8743c64046b"
+  },
+  {
+   "idx": 2654,
+   "db_id": "local_govt_mdm",
+   "question_sha1": "ef2d12d3c9c4c7197570ef9808e190e6255b9719"
+  },
+  {
+   "idx": 5056,
+   "db_id": "device",
+   "question_sha1": "688083eb665f49215229f9c00f94453cd4ddacd5"
+  },
+  {
+   "idx": 6290,
+   "db_id": "city_record",
+   "question_sha1": "3bb413f3e2f536b690527449e78879f4a53d0a6f"
+  },
+  {
+   "idx": 2459,
+   "db_id": "movie_1",
+   "question_sha1": "7a4b39eb14a0c983014ebb468c46ff36c1e3e68b"
+  },
+  {
+   "idx": 1493,
+   "db_id": "debate",
+   "question_sha1": "d80de598cf803c8ba0e21b899ff7c334a38f40ad"
+  },
+  {
+   "idx": 953,
+   "db_id": "medicine_enzyme_interaction",
+   "question_sha1": "77fa97433e11aea56234c6da4df086d15aeaecc4"
+  },
+  {
+   "idx": 6365,
+   "db_id": "school_bus",
+   "question_sha1": "6f8b6da83bd27930466a29694633c1aed81dc61a"
+  },
+  {
+   "idx": 5759,
+   "db_id": "dorm_1",
+   "question_sha1": "ac778e070dfcf2f948a4815b85860848039e0923"
+  },
+  {
+   "idx": 5883,
+   "db_id": "tracking_share_transactions",
+   "question_sha1": "2de86679f70304594c61b9d5288153ce601d0cf2"
+  },
+  {
+   "idx": 658,
+   "db_id": "journal_committee",
+   "question_sha1": "553933b6ce31b37b9e436d07bd569cbb79ab7915"
+  },
+  {
+   "idx": 928,
+   "db_id": "insurance_fnol",
+   "question_sha1": "612a0551c070aeed5fd86422d538443da7aeaa50"
+  },
+  {
+   "idx": 2093,
+   "db_id": "pilot_record",
+   "question_sha1": "c8e31a897fb52b1100829d9a93893b4b3b82bd4f"
+  },
+  {
+   "idx": 1282,
+   "db_id": "game_injury",
+   "question_sha1": "22a3508a605af463041ed4f51d1a4f284d77c8b6"
+  },
+  {
+   "idx": 5092,
+   "db_id": "cre_Drama_Workshop_Groups",
+   "question_sha1": "7c05d9cf203a0bfddb7c518eead829734de867a2"
+  },
+  {
+   "idx": 4502,
+   "db_id": "document_management",
+   "question_sha1": "4c6560e2049c82b27ad4a16ec8390994e9677804"
+  },
+  {
+   "idx": 6992,
+   "db_id": "culture_company",
+   "question_sha1": "e028e751c4134536a74ff9f87b2bf36b369fa486"
+  },
+  {
+   "idx": 1294,
+   "db_id": "soccer_1",
+   "question_sha1": "60e5680a94a62b3dcaf353e4daed6958f336d6b9"
+  },
+  {
+   "idx": 4278,
+   "db_id": "club_1",
+   "question_sha1": "ac3733c409923273f3752cbdfd13468bded26d78"
+  },
+  {
+   "idx": 36,
+   "db_id": "farm",
+   "question_sha1": "59f5d540a52bb4f0ab05f73faaea50586f18f9b4"
+  },
+  {
+   "idx": 1991,
+   "db_id": "phone_market",
+   "question_sha1": "cd50f34c87198f194d6468f4ab7ddca5e2511239"
+  },
+  {
+   "idx": 1007,
+   "db_id": "university_basketball",
+   "question_sha1": "380e570ba5d0fe3b9315958f4d40974feb4d2330"
+  },
+  {
+   "idx": 1724,
+   "db_id": "riding_club",
+   "question_sha1": "69e44989ce5a9f78cff1a9fa3cb3e748eccdb537"
+  },
+  {
+   "idx": 6605,
+   "db_id": "train_station",
+   "question_sha1": "47eaf9d6182676badce0df8781f66c930076f288"
+  },
+  {
+   "idx": 1777,
+   "db_id": "small_bank_1",
+   "question_sha1": "3eac3c93a2e6a3677eb10b3ed90432a21b2bb194"
+  },
+  {
+   "idx": 4015,
+   "db_id": "ship_mission",
+   "question_sha1": "5399e3fa109b6057bfab6619686c9dadd0a30944"
+  },
+  {
+   "idx": 5639,
+   "db_id": "railway",
+   "question_sha1": "23d0a738ff44370914cce09a83b577e59abff7a6"
+  },
+  {
+   "idx": 1918,
+   "db_id": "protein_institute",
+   "question_sha1": "aaeab2052f6acee4c194ab1f0ee758eded27a552"
+  },
+  {
+   "idx": 6506,
+   "db_id": "scientist_1",
+   "question_sha1": "4e516cc4e55f55e2f06ba549ba82dd8463e91561"
+  },
+  {
+   "idx": 233,
+   "db_id": "book_2",
+   "question_sha1": "b71f9bb325e374d4d8652a6242b3320b8ecaa018"
+  },
+  {
+   "idx": 5366,
+   "db_id": "tracking_software_problems",
+   "question_sha1": "c0bcf37e4cab3f4b81d5c2d2818a6d49ad29e50f"
+  },
+  {
+   "idx": 6215,
+   "db_id": "roller_coaster",
+   "question_sha1": "d426c0bd416eb7a9b8b46b2ad1d033605322256d"
+  },
+  {
+   "idx": 6115,
+   "db_id": "customers_and_addresses",
+   "question_sha1": "92671e444351b8d6c5ebbf13ad73ad2237c0f2b5"
+  },
+  {
+   "idx": 4813,
+   "db_id": "aircraft",
+   "question_sha1": "17145fd2a2271e02cbdc6400d801fd671a3ce1b3"
+  },
+  {
+   "idx": 2260,
+   "db_id": "machine_repair",
+   "question_sha1": "55aa170b8aa7ec2b7d68c0d3d9531b67d19a2d1b"
+  },
+  {
+   "idx": 248,
+   "db_id": "musical",
+   "question_sha1": "f71d804ddaf53c2ba17fe829d8da417df5f9ebc9"
+  },
+  {
+   "idx": 2992,
+   "db_id": "sakila_1",
+   "question_sha1": "a2a7769a6af4886d70772e2898ed9cf388be22e6"
+  },
+  {
+   "idx": 1147,
+   "db_id": "climbing",
+   "question_sha1": "79b455100e518ce4dbf01f907e3256545f9fcd42"
+  },
+  {
+   "idx": 4891,
+   "db_id": "school_player",
+   "question_sha1": "21e136f96d41bba0f63141b0a60dc1e1a7c93309"
+  },
+  {
+   "idx": 3119,
+   "db_id": "behavior_monitoring",
+   "question_sha1": "48bd1b76330dd7740e4522211f6647cabd00e9a7"
+  },
+  {
+   "idx": 2146,
+   "db_id": "local_govt_in_alabama",
+   "question_sha1": "a912da2eafc472bc0081c544bd6d43216e81a031"
+  },
+  {
+   "idx": 1697,
+   "db_id": "epinions_1",
+   "question_sha1": "e0a6c974d3ecf814cd2d64e44fd3260a575fb5e5"
+  },
+  {
+   "idx": 795,
+   "db_id": "coffee_shop",
+   "question_sha1": "e0d1efde218ebaa611ae593f63a6c188fc255612"
+  },
+  {
+   "idx": 5773,
+   "db_id": "customer_complaints",
+   "question_sha1": "3b5c82dbc3f0f1a04ad11db044ca14f152bbf014"
+  },
+  {
+   "idx": 6555,
+   "db_id": "wine_1",
+   "question_sha1": "3da5048b7a5d2a57a3864c243eb0a7781a7fe9fb"
+  },
+  {
+   "idx": 405,
+   "db_id": "flight_1",
+   "question_sha1": "829973d99fff99b0ed9d067a419edadb926d1c13"
+  },
+  {
+   "idx": 5661,
+   "db_id": "customers_and_products_contacts",
+   "question_sha1": "1cddb0e0aa9002df5b97800bfca3d86bbc652a5b"
+  },
+  {
+   "idx": 6376,
+   "db_id": "flight_company",
+   "question_sha1": "c8fbc0b8ac866be81d293b5d2f751a31782d5083"
+  },
+  {
+   "idx": 6672,
+   "db_id": "driving_school",
+   "question_sha1": "133c69e3acc51273a647bc01c03dd7ded4b7f2a7"
+  },
+  {
+   "idx": 4845,
+   "db_id": "local_govt_and_lot",
+   "question_sha1": "f1dc6c7570fe469f0b5bc73d3a8dc05619557c92"
+  },
+  {
+   "idx": 3454,
+   "db_id": "hr_1",
+   "question_sha1": "d9b2b997b557a863ff1f25b1478fc41dfac6b3d1"
+  },
+  {
+   "idx": 1973,
+   "db_id": "products_for_hire",
+   "question_sha1": "3f5aa0e286500920b1393f18d060698781d03482"
+  },
+  {
+   "idx": 3077,
+   "db_id": "loan_1",
+   "question_sha1": "3e2e44d6eb290202141053bf23c581c46d42318a"
+  },
+  {
+   "idx": 4628,
+   "db_id": "customers_campaigns_ecommerce",
+   "question_sha1": "6f50bedd5f2d23c71de76d00998bab86fa6e1ae9"
+  },
+  {
+   "idx": 1636,
+   "db_id": "wedding",
+   "question_sha1": "92d42153d804dfa39fb3c1e5c732cb3a929e4800"
+  },
+  {
+   "idx": 2844,
+   "db_id": "customer_deliveries",
+   "question_sha1": "4ac5449e9405426275bccc76d397557cd39f2e5d"
+  },
+  {
+   "idx": 3810,
+   "db_id": "e_learning",
+   "question_sha1": "092db66d7a1cee6a7c0828da2a95dd89bd3f8eee"
+  },
+  {
+   "idx": 4608,
+   "db_id": "entertainment_awards",
+   "question_sha1": "5fe08d8731e9a9feee05e889821de21580ddb346"
+  },
+  {
+   "idx": 2277,
+   "db_id": "entrepreneur",
+   "question_sha1": "d56d8ea896d04eab1361bbb1a0664ba03703d9f7"
+  },
+  {
+   "idx": 6173,
+   "db_id": "music_4",
+   "question_sha1": "4858926896e39a56ba38004e780e1656276d669a"
+  },
+  {
+   "idx": 1510,
+   "db_id": "insurance_and_eClaims",
+   "question_sha1": "e05b8d5c8dce4e72662076a42ec6c2e13399b7c2"
+  },
+  {
+   "idx": 1444,
+   "db_id": "college_2",
+   "question_sha1": "17fd5dded2cc6aac9f1df990ef1d4ec999fd3144"
+  },
+  {
+   "idx": 1900,
+   "db_id": "school_finance",
+   "question_sha1": "716cc07dbf95297fa9737b3f8104069dde650278"
+  },
+  {
+   "idx": 3216,
+   "db_id": "college_1",
+   "question_sha1": "f79afe4575f74323a651eef566b3c5f0b9b790cf"
+  },
+  {
+   "idx": 1177,
+   "db_id": "election_representative",
+   "question_sha1": "1c4419bf7a64e780fba7947e02f00738b4cf8bb8"
+  },
+  {
+   "idx": 1555,
+   "db_id": "customers_and_invoices",
+   "question_sha1": "9cf0af8635fafe68a32830cd1a12639a5669e233"
+  },
+  {
+   "idx": 4356,
+   "db_id": "tracking_grants_for_research",
+   "question_sha1": "cb5ef46556b88190a2708147dff752efd6b09ffe"
+  },
+  {
+   "idx": 1228,
+   "db_id": "apartment_rentals",
+   "question_sha1": "23ee846dd24247251bd1cf5fabba568d5b0775cc"
+  },
+  {
+   "idx": 1321,
+   "db_id": "performance_attendance",
+   "question_sha1": "fb5733e057d1977166adc8dd705449e3721bd3d5"
+  },
+  {
+   "idx": 4671,
+   "db_id": "college_3",
+   "question_sha1": "f68a765af1abfe7ab6090ef783f33eb7258c58f4"
+  },
+  {
+   "idx": 3655,
+   "db_id": "baseball_1",
+   "question_sha1": "4a004974991ac95bfaacc208590c151c199c5a2d"
+  },
+  {
+   "idx": 6333,
+   "db_id": "e_government",
+   "question_sha1": "1849951b2c159a857094c0c477bdee6a2d4f8a00"
+  },
+  {
+   "idx": 3155,
+   "db_id": "assets_maintenance",
+   "question_sha1": "0704b2e2157d7a2a8442c1fe5c585f874badd04a"
+  },
+  {
+   "idx": 5,
+   "db_id": "department_management",
+   "question_sha1": "e624f9138e0a674cb96fabf671cab6c8a36c173c"
+  },
+  {
+   "idx": 2694,
+   "db_id": "storm_record",
+   "question_sha1": "4cd6c6900d97268bffcfe590dde47c3e3f208a2f"
+  },
+  {
+   "idx": 3610,
+   "db_id": "music_1",
+   "question_sha1": "5d856500f58d4a5215a48d0a71fe513af2f81c20"
+  },
+  {
+   "idx": 5829,
+   "db_id": "workshop_paper",
+   "question_sha1": "b65f5603b046675889b948bd281c432be76b2b45"
+  },
+  {
+   "idx": 1838,
+   "db_id": "browser_web",
+   "question_sha1": "f66f2972a328d7f8d725afa0d9042e2fcbb3a5f4"
+  },
+  {
+   "idx": 4943,
+   "db_id": "store_product",
+   "question_sha1": "1ba5343800d405687dcb6b6a0856a9ade58b097f"
+  },
+  {
+   "idx": 1741,
+   "db_id": "gymnast",
+   "question_sha1": "e8fc0eabf4e49120a532b180450d29bd57de3115"
+  },
+  {
+   "idx": 723,
+   "db_id": "customers_card_transactions",
+   "question_sha1": "546232831297d7ebd6cde396b606be15839e968d"
+  },
+  {
+   "idx": 3370,
+   "db_id": "sports_competition",
+   "question_sha1": "ebde6583200d9847a827eeb5810b1d7fd7d38507"
+  },
+  {
+   "idx": 1087,
+   "db_id": "match_season",
+   "question_sha1": "619d72f0c6064645f1993cf209d6af927b52bcb8"
+  },
+  {
+   "idx": 828,
+   "db_id": "chinook_1",
+   "question_sha1": "e65bee83ff2e8b67c456a2be7767e56d94b0709b"
+  },
+  {
+   "idx": 5538,
+   "db_id": "products_gen_characteristics",
+   "question_sha1": "ae64b971ce34572fdf86c7642af543ddfabca4e5"
+  },
+  {
+   "idx": 2064,
+   "db_id": "party_people",
+   "question_sha1": "b298c75af730802998d7b12dbd846d567651bc2f"
+  },
+  {
+   "idx": 2232,
+   "db_id": "formula_1",
+   "question_sha1": "97f6c3cc8524a3428dd11ac70ff95587ee3e797b"
+  },
+  {
+   "idx": 324,
+   "db_id": "product_catalog",
+   "question_sha1": "93d88c6efb6b71f94c3d13242ca90bf790ab4385"
+  },
+  {
+   "idx": 6020,
+   "db_id": "game_1",
+   "question_sha1": "c6e6a4591c72f9b86b9d0a09c64eb9afe2a54949"
+  },
+  {
+   "idx": 2431,
+   "db_id": "candidate_poll",
+   "question_sha1": "338625b1ee28e17cd640619b4ecd661c44999fc5"
+  },
+  {
+   "idx": 2816,
+   "db_id": "news_report",
+   "question_sha1": "b28e0d953539682e9dd0e9b7df34e82a28de8cf9"
+  },
+  {
+   "idx": 4753,
+   "db_id": "department_store",
+   "question_sha1": "104f73266a7df03686966eb63a7c21eeec96b0db"
+  },
+  {
+   "idx": 2108,
+   "db_id": "cre_Doc_Control_Systems",
+   "question_sha1": "22651e712c6687347ef7abc42a1fdb0e4928da58"
+  },
+  {
+   "idx": 4583,
+   "db_id": "solvency_ii",
+   "question_sha1": "af9074454445d544a2f9622d470df2cdb889f7c8"
+  },
+  {
+   "idx": 2896,
+   "db_id": "icfp_1",
+   "question_sha1": "97d9d22771e29d947155211a6e7dfb8385b2753e"
+  },
+  {
+   "idx": 4470,
+   "db_id": "network_2",
+   "question_sha1": "56b85a304830c6abe3f212fc6c20a04763347e42"
+  },
+  {
+   "idx": 6425,
+   "db_id": "cre_Docs_and_Epenses",
+   "question_sha1": "a11e220e8e8aa1e222658d30d52b2a08ffa2725e"
+  },
+  {
+   "idx": 6900,
+   "db_id": "tracking_orders",
+   "question_sha1": "0a8ba8a48e396b399b585034ef190bd95580cda4"
+  },
+  {
+   "idx": 2342,
+   "db_id": "csu_1",
+   "question_sha1": "90d213ece52d5b309a26309a63bf5a698a4a3b87"
+  },
+  {
+   "idx": 1154,
+   "db_id": "body_builder",
+   "question_sha1": "c1dd8708d488b4a5b45211acb161fc88153fd6b2"
+  },
+  {
+   "idx": 1946,
+   "db_id": "cinema",
+   "question_sha1": "eb0907a3506df5f8cf130e847accc129f3642839"
+  },
+  {
+   "idx": 481,
+   "db_id": "allergy_1",
+   "question_sha1": "e6ee60aca3f952910473b1effba7995a2f00cb82"
+  },
+  {
+   "idx": 3850,
+   "db_id": "insurance_policies",
+   "question_sha1": "8be4997e1a76f07e65dc50c3a2803b53da8ff92f"
+  },
+  {
+   "idx": 3162,
+   "db_id": "station_weather",
+   "question_sha1": "b1e840f1130622da7fa8218879c856ba0df6575f"
+  },
+  {
+   "idx": 6783,
+   "db_id": "activity_1",
+   "question_sha1": "6b1cc713f3f4579bb2b22294f5f3d896977659b2"
+  },
+  {
+   "idx": 2031,
+   "db_id": "gas_company",
+   "question_sha1": "2550e872130240fe7b19dc941370241b53fc4527"
+  },
+  {
+   "idx": 5402,
+   "db_id": "shop_membership",
+   "question_sha1": "f8a96543f1b4cb23a8340c4dd1184302aecef1ad"
+  },
+  {
+   "idx": 2316,
+   "db_id": "perpetrator",
+   "question_sha1": "2c467a193b1974c89d26f2c6b78681e63a00cfea"
+  },
+  {
+   "idx": 4488,
+   "db_id": "decoration_competition",
+   "question_sha1": "3fd88951b3d56651eb852e0f58e8e996ea2aef67"
+  },
+  {
+   "idx": 4239,
+   "db_id": "cre_Doc_Tracking_DB",
+   "question_sha1": "7ca6ac13a0af82fd510e3c1db72e930fc6dba20d"
+  },
+  {
+   "idx": 6956,
+   "db_id": "architecture",
+   "question_sha1": "762709bb38a3024b2434778f1c2518ccf918cc7e"
+  },
+  {
+   "idx": 173,
+   "db_id": "bike_1",
+   "question_sha1": "a26ed4050aac8074c7c46878de35731b756281a2"
+  }
+ ]
+}
