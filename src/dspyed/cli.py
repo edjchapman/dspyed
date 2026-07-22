@@ -1,19 +1,20 @@
 """dspyed command-line interface.
 
-Subcommands land phase by phase (see the project plan); each stub names the
-phase that implements it, so `dspyed <cmd>` is honest about what exists today.
+Subcommands land phase by phase (see the project plan); implemented commands
+do real work, the rest are stubs that name the phase implementing them — so
+`dspyed <cmd>` is honest about what exists today.
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import sys
+from pathlib import Path
 
 from dspyed import __version__
 
-_PLANNED: dict[str, str] = {
-    "download": "Phase 1 — fetch + validate the Spider dataset",
-    "splits": "Phase 1 — build seeded, committed example-id splits",
+_STUBS: dict[str, str] = {
     "eval": "Phase 2 — run an experiment config against an eval split",
     "compile": "Phase 4 — optimize a program and save the artifact",
     "report": "Phase 3 — regenerate figures + the README results table",
@@ -25,9 +26,35 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="dspyed", description=__doc__)
     parser.add_argument("--version", action="version", version=f"dspyed {__version__}")
     subparsers = parser.add_subparsers(dest="command")
-    for name, help_text in _PLANNED.items():
+
+    download = subparsers.add_parser("download", help="fetch + validate the Spider dataset")
+    download.add_argument("--root", type=Path, default=Path("data/spider"))
+    download.add_argument("--force", action="store_true", help="ignore an existing MANIFEST.json")
+
+    splits = subparsers.add_parser("splits", help="build seeded, committed example-id splits")
+    splits.add_argument("--root", type=Path, default=Path("data/spider"))
+    splits.add_argument("--splits-dir", type=Path, default=Path("data/splits"))
+    splits.add_argument("--seed", type=int, default=13)
+
+    for name, help_text in _STUBS.items():
         subparsers.add_parser(name, help=help_text)
     return parser
+
+
+def _cmd_download(args: argparse.Namespace) -> int:
+    from dspyed.data.spider import download  # lazy: pulls network-side deps
+
+    manifest = download(args.root, force=args.force)
+    print(json.dumps(manifest, indent=2))
+    return 0
+
+
+def _cmd_splits(args: argparse.Namespace) -> int:
+    from dspyed.data.splits import build_splits
+
+    summary = build_splits(args.root, args.splits_dir, seed=args.seed)
+    print(json.dumps(summary, indent=2))
+    return 0
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -35,8 +62,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.command is None:
         build_parser().print_help()
         return 0
+    if args.command == "download":
+        return _cmd_download(args)
+    if args.command == "splits":
+        return _cmd_splits(args)
     print(
-        f"dspyed {args.command}: not implemented yet ({_PLANNED[args.command]})",
+        f"dspyed {args.command}: not implemented yet ({_STUBS[args.command]})",
         file=sys.stderr,
     )
     return 2

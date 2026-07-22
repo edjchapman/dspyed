@@ -6,7 +6,7 @@
 # This file is yours now — edit freely. The most important edit is wiring your
 # stack's lint/test into `stack-check` (see the comment block below).
 
-.PHONY: help check check-links check-anchors stack-check \
+.PHONY: help check check-links check-anchors stack-check data splits \
         check-commit-msg check-stale-branches sweep-branches lint-md
 
 .DEFAULT_GOAL := help
@@ -38,6 +38,14 @@ stack-check: ## Python gate: ruff format --check, ruff check, pyright, pytest (o
 	@uv run ruff check .
 	@uv run pyright
 	@uv run pytest -m "not llm"
+
+# === Project (dspyed) ===
+
+data: ## Download + validate the Spider dataset (network, ~1 GB first run)
+	@uv run dspyed download
+
+splits: ## Build the seeded, committed example-id splits
+	@uv run dspyed splits
 
 # === On-demand (not part of make check) ===
 

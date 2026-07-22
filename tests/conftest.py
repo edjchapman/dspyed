@@ -50,16 +50,31 @@ INSERT INTO concert VALUES
     (12, 'Palais',     4);
 """
 
+_MINI_PETS_DDL = """
+CREATE TABLE pets (
+    pet_id INTEGER PRIMARY KEY,
+    name TEXT,
+    species TEXT
+);
+INSERT INTO pets VALUES
+    (1, 'Rex',    'dog'),
+    (2, 'Whisky', 'cat'),
+    (3, 'Bubbles','fish');
+"""
+
+MINI_DBS = {"mini_singer": _MINI_SINGER_DDL, "mini_pets": _MINI_PETS_DDL}
+
 
 @pytest.fixture(scope="session")
 def db_root(tmp_path_factory: pytest.TempPathFactory) -> Path:
     root = tmp_path_factory.mktemp("mini-spider")
-    db_dir = root / "mini_singer"
-    db_dir.mkdir()
-    conn = sqlite3.connect(db_dir / "mini_singer.sqlite")
-    try:
-        conn.executescript(_MINI_SINGER_DDL)
-        conn.commit()
-    finally:
-        conn.close()
+    for db_id, ddl in MINI_DBS.items():
+        db_dir = root / db_id
+        db_dir.mkdir()
+        conn = sqlite3.connect(db_dir / f"{db_id}.sqlite")
+        try:
+            conn.executescript(ddl)
+            conn.commit()
+        finally:
+            conn.close()
     return root

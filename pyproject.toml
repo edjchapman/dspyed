@@ -27,6 +27,7 @@ dspyed = "dspyed.cli:main"
 [dependency-groups]
 dev = [
     "httpx>=0.28",
+    "pyarrow>=18",  # `dspyed download` only: parquet → JSON conversion, never at runtime
     "pyright>=1.1.390",
     "pytest>=8.3",
     "pytest-socket>=0.7",
@@ -62,7 +63,7 @@ line-length = 100
 select = ["F", "E", "W", "I", "UP", "B", "RUF", "SIM", "C4", "PT", "PTH", "PIE", "N", "BLE", "S"]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["S101"]    # asserts are the point of a test
+"tests/*" = ["S101", "S311"]  # asserts are the point of a test; seeded random is deliberate
 "conftest.py" = ["S101"]
 "scripts/*" = ["S607"]  # dev validators invoke `git` from PATH (portable across OSes)
 

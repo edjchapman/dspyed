@@ -1,0 +1,509 @@
+{
+ "dataset": "spider",
+ "source_split": "train",
+ "seed": 13,
+ "created": "2026-07-22",
+ "filter": "gold_executes_nonempty",
+ "ids": [
+  {
+   "idx": 4110,
+   "db_id": "company_employee",
+   "question_sha1": "35b4d4f1d577da487c88e5bebe3b4a122ea9c98f"
+  },
+  {
+   "idx": 2687,
+   "db_id": "party_host",
+   "question_sha1": "a9dae77fa681c3b40e74b30f10ecde1498c7f6d5"
+  },
+  {
+   "idx": 4567,
+   "db_id": "company_office",
+   "question_sha1": "7805a036797ee2a4e89d2928d6b66a9f271dc62c"
+  },
+  {
+   "idx": 3951,
+   "db_id": "hospital_1",
+   "question_sha1": "9cd52aa499eb65eae9e141096a4ddf08e402c1f8"
+  },
+  {
+   "idx": 5954,
+   "db_id": "cre_Theme_park",
+   "question_sha1": "58de9ffa2f23bc3b968108e4ef3f9c4106942852"
+  },
+  {
+   "idx": 783,
+   "db_id": "race_track",
+   "question_sha1": "50e4ae7a89ea0ecc032162d88a0d40101770400e"
+  },
+  {
+   "idx": 5620,
+   "db_id": "swimming",
+   "question_sha1": "e23e06fda255649cf77d2e942bf60bbc9c955dda"
+  },
+  {
+   "idx": 2757,
+   "db_id": "election",
+   "question_sha1": "cd1243b7ecc66077e31ccbd2cf5f5e0c52cdba95"
+  },
+  {
+   "idx": 634,
+   "db_id": "store_1",
+   "question_sha1": "a74539fd97c629f0464c01cfd76054226a460110"
+  },
+  {
+   "idx": 4078,
+   "db_id": "student_1",
+   "question_sha1": "a947235638ec4a27a8ff75fcdba2d8a1a8d53317"
+  },
+  {
+   "idx": 6879,
+   "db_id": "flight_4",
+   "question_sha1": "394d371cc3328423e10e6c37d317f569148af297"
+  },
+  {
+   "idx": 293,
+   "db_id": "twitter_1",
+   "question_sha1": "4b6e64068eb41edfdc314a6a4bc85f4652c3b07e"
+  },
+  {
+   "idx": 4944,
+   "db_id": "soccer_2",
+   "question_sha1": "0a1443f4a124deb3f3b8f6ab53f084e0871cbeba"
+  },
+  {
+   "idx": 2835,
+   "db_id": "restaurant_1",
+   "question_sha1": "228afa48f511e685db4eb98fc832ff4497bc497b"
+  },
+  {
+   "idx": 1869,
+   "db_id": "wrestler",
+   "question_sha1": "a53128aecbe4476115c9dfe42afc1c678d560030"
+  },
+  {
+   "idx": 3396,
+   "db_id": "manufacturer",
+   "question_sha1": "47e64737264f3e69f258958f167f1bf3226317b3"
+  },
+  {
+   "idx": 2553,
+   "db_id": "county_public_safety",
+   "question_sha1": "01b078f77be277b43ce0d446e7e7503848e4c859"
+  },
+  {
+   "idx": 5483,
+   "db_id": "voter_2",
+   "question_sha1": "dc356c4a9c2b0463a71329fe35fdb7da2e3bc20f"
+  },
+  {
+   "idx": 2132,
+   "db_id": "company_1",
+   "question_sha1": "4794d94a3463584d8e1140b22af08b7c51b3d80b"
+  },
+  {
+   "idx": 2591,
+   "db_id": "inn_1",
+   "question_sha1": "0128a9b520991e6af1832c564dc890e23534ea3d"
+  },
+  {
+   "idx": 3711,
+   "db_id": "mountain_photos",
+   "question_sha1": "078607586a32fd777f253bb67475f0641a7435b3"
+  },
+  {
+   "idx": 4113,
+   "db_id": "film_rank",
+   "question_sha1": "b0c5b4d5a3c439ca02c6af30fc531f0da9f1993e"
+  },
+  {
+   "idx": 100,
+   "db_id": "student_assessment",
+   "question_sha1": "798ade6464ecec3663d219d90485c9282127c9c9"
+  },
+  {
+   "idx": 5323,
+   "db_id": "manufactory_1",
+   "question_sha1": "e4ec4742e81ded3dbf074a65520724afc6e195dd"
+  },
+  {
+   "idx": 3735,
+   "db_id": "program_share",
+   "question_sha1": "df97c99257b8e97396b6fa3126ead88c6d02977e"
+  },
+  {
+   "idx": 1662,
+   "db_id": "theme_gallery",
+   "question_sha1": "21385fa5cc839594360cb2294e4926c5384f9c5c"
+  },
+  {
+   "idx": 6230,
+   "db_id": "ship_1",
+   "question_sha1": "3941b0f7630611ffbe08e369de397399f0219e30"
+  },
+  {
+   "idx": 1045,
+   "db_id": "phone_1",
+   "question_sha1": "e60697494ecc718162817b0cdd93d347193c50ae"
+  },
+  {
+   "idx": 2658,
+   "db_id": "local_govt_mdm",
+   "question_sha1": "5ce232f7dd6152a3b918e3bc9b264666854bf3cc"
+  },
+  {
+   "idx": 5077,
+   "db_id": "device",
+   "question_sha1": "98a2175df1e6a2d4656d565797412d33b6dd815f"
+  },
+  {
+   "idx": 6293,
+   "db_id": "city_record",
+   "question_sha1": "685017cc4f69fa512f1d6afdb07587b6776ad9ca"
+  },
+  {
+   "idx": 2475,
+   "db_id": "movie_1",
+   "question_sha1": "1498429fca5963002f6e50143f42e60ac9e9ce08"
+  },
+  {
+   "idx": 1500,
+   "db_id": "debate",
+   "question_sha1": "9592efa7d7c444ad274f3d23364d4f61200f922c"
+  },
+  {
+   "idx": 943,
+   "db_id": "medicine_enzyme_interaction",
+   "question_sha1": "1cf2d73a3a245123090d102b1f52afc25a248746"
+  },
+  {
+   "idx": 6364,
+   "db_id": "school_bus",
+   "question_sha1": "fabdf62793cad29ae67fa8f45258a3114e533759"
+  },
+  {
+   "idx": 5687,
+   "db_id": "dorm_1",
+   "question_sha1": "cf14e070eaf666e3bbfccdaef1dd49ce56b74dd8"
+  },
+  {
+   "idx": 5880,
+   "db_id": "tracking_share_transactions",
+   "question_sha1": "dc3c042803c5c7a003336c029071a0d9ed12722b"
+  },
+  {
+   "idx": 653,
+   "db_id": "journal_committee",
+   "question_sha1": "a9572366bef3293c76fab58b5ed4c4864b77cc65"
+  },
+  {
+   "idx": 913,
+   "db_id": "insurance_fnol",
+   "question_sha1": "ca8817a3bc8549e9d1d933705aec0e445bca19e7"
+  },
+  {
+   "idx": 2083,
+   "db_id": "pilot_record",
+   "question_sha1": "94228bff6bb380ad0cb847e261cb5acd1632a3bd"
+  },
+  {
+   "idx": 1283,
+   "db_id": "game_injury",
+   "question_sha1": "4111641d54b6708379c6c066d3e352f7bd287393"
+  },
+  {
+   "idx": 5144,
+   "db_id": "cre_Drama_Workshop_Groups",
+   "question_sha1": "cd4b5bc5574f2aa73481b7d3c06bf297e731d53e"
+  },
+  {
+   "idx": 4519,
+   "db_id": "document_management",
+   "question_sha1": "5fc27ca582ba3af321c7f6826fe73dd5a39d711f"
+  },
+  {
+   "idx": 6972,
+   "db_id": "culture_company",
+   "question_sha1": "d6b00b7486f79e82b14a94b9e47f623aa1df9348"
+  },
+  {
+   "idx": 1296,
+   "db_id": "soccer_1",
+   "question_sha1": "969bfe9fe7418e422e26aa5f7dc29336da524443"
+  },
+  {
+   "idx": 4303,
+   "db_id": "club_1",
+   "question_sha1": "423ead18e42aa491ba4df604ce9ebb6e3c071cc1"
+  },
+  {
+   "idx": 19,
+   "db_id": "farm",
+   "question_sha1": "10da06534546785be8e7fb5e8cb40c4006d3a887"
+  },
+  {
+   "idx": 1986,
+   "db_id": "phone_market",
+   "question_sha1": "6b4ffbfead1e71b7403de02af6ec73d02d4497b1"
+  },
+  {
+   "idx": 980,
+   "db_id": "university_basketball",
+   "question_sha1": "3c4266fa5044e7dec7b6ba263ad322c42bca15b4"
+  },
+  {
+   "idx": 1725,
+   "db_id": "riding_club",
+   "question_sha1": "2793cf16ffb0e4336c7d76795fe8e32d75a5f3e1"
+  },
+  {
+   "idx": 6601,
+   "db_id": "train_station",
+   "question_sha1": "4df8e9c78d6167d40ed8192ad360bedc86ebb891"
+  },
+  {
+   "idx": 1800,
+   "db_id": "small_bank_1",
+   "question_sha1": "d9afef07ebf82ba932c56d042c3afdd611abf3f7"
+  },
+  {
+   "idx": 4025,
+   "db_id": "ship_mission",
+   "question_sha1": "acfd0c512127cf81761de8c0a2cf1c756cbbdf12"
+  },
+  {
+   "idx": 5643,
+   "db_id": "railway",
+   "question_sha1": "209aa1208a2678905b28f63e50765537b5a62600"
+  },
+  {
+   "idx": 1911,
+   "db_id": "protein_institute",
+   "question_sha1": "5980df842aca7053af1258d68d59e183e5f89fb9"
+  },
+  {
+   "idx": 6494,
+   "db_id": "scientist_1",
+   "question_sha1": "4996ec513b449aa229952dd719ad06804dcaa723"
+  },
+  {
+   "idx": 220,
+   "db_id": "book_2",
+   "question_sha1": "8aac5479d1fa105affb7c6b0d1a7af15c96026e3"
+  },
+  {
+   "idx": 5389,
+   "db_id": "tracking_software_problems",
+   "question_sha1": "ac4ab32a49b672fe57b3ba9fda9d6d767981766f"
+  },
+  {
+   "idx": 6206,
+   "db_id": "roller_coaster",
+   "question_sha1": "000d2337c86b2d6e1d7832490ff959a5dceaaaef"
+  },
+  {
+   "idx": 6082,
+   "db_id": "customers_and_addresses",
+   "question_sha1": "6b859994ecd9b6ba9242095d7bff57f8fc04d583"
+  },
+  {
+   "idx": 4815,
+   "db_id": "aircraft",
+   "question_sha1": "2548c345d01b2bbea7b33909f65d16a45590406b"
+  },
+  {
+   "idx": 2258,
+   "db_id": "machine_repair",
+   "question_sha1": "189b082bcc013535265af23789a01721e115fef7"
+  },
+  {
+   "idx": 253,
+   "db_id": "musical",
+   "question_sha1": "2c22a112f7776c9aa5f80842ce81dc6bb22cda46"
+  },
+  {
+   "idx": 2959,
+   "db_id": "sakila_1",
+   "question_sha1": "0d93cbbd2cee3c34c3614edd9fcd716f12647de3"
+  },
+  {
+   "idx": 1112,
+   "db_id": "climbing",
+   "question_sha1": "4b5f66d3bb182dc21b1ae7b59b55ecad08383335"
+  },
+  {
+   "idx": 4878,
+   "db_id": "school_player",
+   "question_sha1": "3f98c5bee2e66cfdba73a1e6ae805a392e7fe83a"
+  },
+  {
+   "idx": 3091,
+   "db_id": "behavior_monitoring",
+   "question_sha1": "8a5671eb10e3960360850412543e0476858ddd3e"
+  },
+  {
+   "idx": 2144,
+   "db_id": "local_govt_in_alabama",
+   "question_sha1": "d85921ad2543b083da338488c6e0c43d5b1b2bc0"
+  },
+  {
+   "idx": 799,
+   "db_id": "coffee_shop",
+   "question_sha1": "7f3677bc05340656c3396f3954368e9633eaeed1"
+  },
+  {
+   "idx": 5795,
+   "db_id": "customer_complaints",
+   "question_sha1": "6abd6a420a5a8e61e8a3b1582b031d795531bccb"
+  },
+  {
+   "idx": 6543,
+   "db_id": "wine_1",
+   "question_sha1": "c1ce1fdc5437ef5dd73b62d2c80d1f124bb0120b"
+  },
+  {
+   "idx": 407,
+   "db_id": "flight_1",
+   "question_sha1": "5c7006a9ab5ff6cc5e5f883b4beb15bd80c3bcb5"
+  },
+  {
+   "idx": 5666,
+   "db_id": "customers_and_products_contacts",
+   "question_sha1": "3aa9163156b25cb83093c8810f8aae105f745570"
+  },
+  {
+   "idx": 6384,
+   "db_id": "flight_company",
+   "question_sha1": "6ea2c61ae0c63ae7be359e56eafd6183f317f76c"
+  },
+  {
+   "idx": 6661,
+   "db_id": "driving_school",
+   "question_sha1": "bdc670c3a1baed368adaa2cdb674754df0ce5b48"
+  },
+  {
+   "idx": 4848,
+   "db_id": "local_govt_and_lot",
+   "question_sha1": "6b01a8de51f114f24126ff1372566e2bc9ce5cf1"
+  },
+  {
+   "idx": 3522,
+   "db_id": "hr_1",
+   "question_sha1": "598e05ab695a992eab60c5be439b65af905c9b31"
+  },
+  {
+   "idx": 1969,
+   "db_id": "products_for_hire",
+   "question_sha1": "dccd2bb86de51117bc9b17bbe04e0345f022f90a"
+  },
+  {
+   "idx": 3074,
+   "db_id": "loan_1",
+   "question_sha1": "f148b8ce1d483ed98c289379278e201d3c324637"
+  },
+  {
+   "idx": 4631,
+   "db_id": "customers_campaigns_ecommerce",
+   "question_sha1": "fe9d24c39aa1e44206e95d02deec2c4e8e6266d5"
+  },
+  {
+   "idx": 1647,
+   "db_id": "wedding",
+   "question_sha1": "df1fb36e893d63c5c14c2e79ed4da4853ea2bc87"
+  },
+  {
+   "idx": 2850,
+   "db_id": "customer_deliveries",
+   "question_sha1": "45ec3596be138152ba6ae5426692c6f2f28c1f3e"
+  },
+  {
+   "idx": 3822,
+   "db_id": "e_learning",
+   "question_sha1": "f00f00af7f983b12233acb24798cbf20e0b210c0"
+  },
+  {
+   "idx": 4614,
+   "db_id": "entertainment_awards",
+   "question_sha1": "caae42eecafc784e9f611e568427ddd88d756f4c"
+  },
+  {
+   "idx": 2281,
+   "db_id": "entrepreneur",
+   "question_sha1": "3646efbff1bc42ed3a0330afbd7354db0c53dcc5"
+  },
+  {
+   "idx": 6169,
+   "db_id": "music_4",
+   "question_sha1": "5a45ff85c0a7a435a7981317ebe1074968142026"
+  },
+  {
+   "idx": 1540,
+   "db_id": "insurance_and_eClaims",
+   "question_sha1": "821bdf7f12ac9945052b8c0f0d6acfa1ee5d83ed"
+  },
+  {
+   "idx": 1381,
+   "db_id": "college_2",
+   "question_sha1": "8ded624e2015ce9a82329c84a198fcad18a0acd6"
+  },
+  {
+   "idx": 1906,
+   "db_id": "school_finance",
+   "question_sha1": "655ecdebdc03f7ba2b13f8b5091d959f1eef6c73"
+  },
+  {
+   "idx": 3275,
+   "db_id": "college_1",
+   "question_sha1": "cc3e9f12b40223ae5ee9c5bdbfd4a2d4bc496ff4"
+  },
+  {
+   "idx": 1187,
+   "db_id": "election_representative",
+   "question_sha1": "59620034557088f74c60c90ce22a743b252fdde9"
+  },
+  {
+   "idx": 1573,
+   "db_id": "customers_and_invoices",
+   "question_sha1": "020c0a4252c03acc13fee9d7fc1774c279209919"
+  },
+  {
+   "idx": 4363,
+   "db_id": "tracking_grants_for_research",
+   "question_sha1": "1c8252fc20c6eab8635888724ca79e026f347b9e"
+  },
+  {
+   "idx": 1242,
+   "db_id": "apartment_rentals",
+   "question_sha1": "a5ccc7a05ff8e4d49d82149c82a16d790487b15e"
+  },
+  {
+   "idx": 1307,
+   "db_id": "performance_attendance",
+   "question_sha1": "84b6ed3b288ae50c2d69e536a9bb7cb9babbcea7"
+  },
+  {
+   "idx": 4706,
+   "db_id": "college_3",
+   "question_sha1": "74342eef29b4f6dae7a8de9253d49bd503d84b80"
+  },
+  {
+   "idx": 3630,
+   "db_id": "baseball_1",
+   "question_sha1": "e809d505c6100a8dbee02bf83dd011c2536f8ec1"
+  },
+  {
+   "idx": 6331,
+   "db_id": "e_government",
+   "question_sha1": "6ec77f8a723eb084e5c7034ac6ac26abb3863bb5"
+  },
+  {
+   "idx": 3143,
+   "db_id": "assets_maintenance",
+   "question_sha1": "acf145077d3bfd921fbf12b2c1c41d79ce7a0dfb"
+  },
+  {
+   "idx": 15,
+   "db_id": "department_management",
+   "question_sha1": "257c936ee7a208797210b47f3d96e53e345d5767"
+  }
+ ]
+}
