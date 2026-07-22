@@ -28,6 +28,8 @@ generate calls), which is exactly how a production deployment would behave.
 | E02 | P1 CoT | Haiku 4.5 | — | **75.0%** | 99.5% | $0.13 | 1.7s |
 | E03 | P2 +linking | Haiku 4.5 | — | **75.5%** | 99.5% | $0.17 | 2.5s |
 | E04 | P3 +repair | Haiku 4.5 | — | **75.5%** | 100.0% | $0.00 | 0.0s |
+| E05 | P0 zero-shot | Sonnet 5 | — | **81.0%** | 100.0% | $0.22 | 1.7s |
+| E06 | P3 +repair | Sonnet 5 | — | **80.5%** | 100.0% | $0.49 | 3.8s |
 <!-- results:end -->
 
 ![Baseline ladder](reports/figures/fig_ladder.png)
