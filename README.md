@@ -1,5 +1,7 @@
 # dspyed
 
+[![check](https://github.com/edjchapman/dspyed/actions/workflows/check.yml/badge.svg)](https://github.com/edjchapman/dspyed/actions/workflows/check.yml)
+
 *Compiled, not prompted — a measured text-to-SQL pipeline on [Spider](https://yale-lily.github.io/spider), built with [DSPy](https://dspy.ai).*
 
 > **Status: under construction.** Bootstrap + tooling are in place; the pipeline,
