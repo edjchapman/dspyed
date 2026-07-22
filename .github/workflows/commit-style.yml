@@ -23,7 +23,7 @@ jobs:
     name: validate PR title
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - name: Validate PR title
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
