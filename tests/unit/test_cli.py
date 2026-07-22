@@ -18,5 +18,5 @@ def test_no_command_prints_help_and_succeeds(capsys: pytest.CaptureFixture[str])
 
 
 def test_stub_command_exits_nonzero(capsys: pytest.CaptureFixture[str]) -> None:
-    assert main(["eval"]) == 2
+    assert main(["report"]) == 2
     assert "not implemented" in capsys.readouterr().err
