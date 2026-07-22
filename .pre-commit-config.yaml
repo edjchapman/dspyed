@@ -1,0 +1,28 @@
+repos:
+  # Ruff via the project's locked version — uv.lock is the single source of truth, so
+  # there's no separate pinned rev to drift from the ruff floor in pyproject.toml.
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff (lint + fix)
+        entry: uv run ruff check --fix
+        language: system
+        types_or: [python, pyi]
+        require_serial: true
+      - id: ruff-format
+        name: ruff format
+        entry: uv run ruff format
+        language: system
+        types_or: [python, pyi]
+
+  # The full quality gate — same `make check` that CI runs. Fires via the global
+  # ~/.config/git/hooks dispatcher's `pre-commit run`; no repo-local core.hooksPath
+  # is set, so ggshield secret-scanning stays active.
+  - repo: local
+    hooks:
+      - id: make-check
+        name: make check (full quality gate)
+        entry: make check
+        language: system
+        pass_filenames: false
+        always_run: true

@@ -1,0 +1,25 @@
+# --- Claude layer: personal/symlinked bits stay local. The committed pieces
+# (.claude/settings.json + .claude/hooks/) are the Claude-on-web bootstrap —
+# do NOT blanket-ignore .claude/.
+.claude/agents
+.claude/skills
+.claude/rules
+.claude/settings.local.json
+.mcp.json
+
+# --- Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+.coverage
+coverage.xml
+
+# --- Project
+.env
+data/spider/
+.idea/
+.DS_Store
