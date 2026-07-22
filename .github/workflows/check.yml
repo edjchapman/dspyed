@@ -21,6 +21,7 @@ jobs:
           python-version: "3.12"
           enable-cache: true
       - name: Install dependencies
-        run: uv sync --frozen
+        # --group analysis: matplotlib must resolve for pyright over eval/report.py
+        run: uv sync --frozen --group analysis
       - name: Run make check
         run: make check
