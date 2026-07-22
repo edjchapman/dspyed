@@ -16,7 +16,6 @@ from dspyed import __version__
 
 _STUBS: dict[str, str] = {
     "compile": "Phase 4 — optimize a program and save the artifact",
-    "report": "Phase 3 — regenerate figures + the README results table",
     "serve": "Phase 5 — run the FastAPI demo locally",
 }
 
@@ -36,11 +35,18 @@ def build_parser() -> argparse.ArgumentParser:
     splits.add_argument("--seed", type=int, default=13)
 
     evaluate = subparsers.add_parser("eval", help="run a program over a split; write results JSON")
-    evaluate.add_argument("--experiment", required=True, help="results file name, e.g. E01-smoke")
-    evaluate.add_argument("--program", required=True, choices=("p0", "p1", "p2", "p3"))
+    evaluate.add_argument("--config", type=Path, help="experiment config JSON (overrides flags)")
+    evaluate.add_argument("--experiment", help="results file name, e.g. E01-smoke")
+    evaluate.add_argument("--program", choices=("p0", "p1", "p2", "p3"))
     evaluate.add_argument("--model", default="small", choices=("small", "large"))
     evaluate.add_argument("--split", default="dev_eval_200")
     evaluate.add_argument("--limit", type=int, default=None, help="cap examples (smoke runs)")
+    evaluate.add_argument("--threads", type=int, default=1, help="worker threads for live runs")
+
+    report = subparsers.add_parser("report", help="regenerate README results table + figures")
+    report.add_argument("--results-dir", type=Path, default=Path("experiments/results"))
+    report.add_argument("--figures-dir", type=Path, default=Path("reports/figures"))
+    report.add_argument("--readme", type=Path, default=Path("README.md"))
 
     for name, help_text in _STUBS.items():
         subparsers.add_parser(name, help=help_text)
@@ -67,13 +73,20 @@ def _cmd_eval(args: argparse.Namespace) -> int:
     from dspyed.config import Settings
     from dspyed.eval.harness import RunSpec, run_eval
 
-    spec = RunSpec(
-        experiment_id=args.experiment,
-        program=args.program,
-        model=args.model,
-        split=args.split,
-        limit=args.limit,
-    )
+    if args.config is not None:
+        spec = RunSpec.from_config(args.config)
+    elif args.experiment and args.program:
+        spec = RunSpec(
+            experiment_id=args.experiment,
+            program=args.program,
+            model=args.model,
+            split=args.split,
+            limit=args.limit,
+            num_threads=args.threads,
+        )
+    else:
+        print("eval needs either --config or (--experiment and --program)", file=sys.stderr)
+        return 2
     results = run_eval(spec, Settings())
     print(json.dumps(results["summary"], indent=2))
     return 0
@@ -93,6 +106,11 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_splits(args)
     if args.command == "eval":
         return _cmd_eval(args)
+    if args.command == "report":
+        from dspyed.eval.report import generate
+
+        print(json.dumps(generate(args.results_dir, args.figures_dir, args.readme), indent=2))
+        return 0
     print(
         f"dspyed {args.command}: not implemented yet ({_STUBS[args.command]})",
         file=sys.stderr,

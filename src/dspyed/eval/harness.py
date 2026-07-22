@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 import subprocess
 import time
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
@@ -22,7 +23,7 @@ import dspy
 
 from dspyed.config import Settings, estimate_cost_usd
 from dspyed.data.schema import DBSchema, introspect, render
-from dspyed.data.spider import _sha256
+from dspyed.data.spider import SpiderExample, _sha256
 from dspyed.data.splits import load_split
 from dspyed.engine import SafeExecutor
 from dspyed.eval.metric import ExecutionAccuracy
@@ -37,6 +38,11 @@ class RunSpec:
     split: str = "dev_eval_200"
     limit: int | None = None
     temperature: float = 0.0
+    num_threads: int = 1  # >1 for live runs; tests stay sequential (DummyLM ordering)
+
+    @classmethod
+    def from_config(cls, path: Path) -> RunSpec:
+        return cls(**json.loads(path.read_text()))
 
 
 def _git_sha() -> str:
@@ -86,6 +92,13 @@ def run_eval(spec: RunSpec, settings: Settings, *, lm: object | None = None) -> 
     """
     model_id = settings.small_model if spec.model == "small" else settings.large_model
     if lm is None:
+        # Sonnet 5 (reasoning-class) rejects temperature != 1: litellm raises
+        # UnsupportedParamsError unless allowed to drop the param. Dropped-param
+        # runs execute at the model's fixed sampling — documented in the eval
+        # writeup (those rows reflect one sampled run, cached thereafter).
+        import litellm
+
+        litellm.drop_params = True
         lm = dspy.LM(model_id, temperature=spec.temperature, max_tokens=settings.max_tokens_cot)
     dspy.configure(lm=lm, track_usage=True)
 
@@ -101,9 +114,11 @@ def run_eval(spec: RunSpec, settings: Settings, *, lm: object | None = None) -> 
     if spec.limit is not None:
         examples = examples[: spec.limit]
 
-    records: list[dict[str, Any]] = []  # dspy-facing orchestration: Any is honest here
-    started = time.monotonic()
+    # Pre-warm the schema cache single-threaded — the worker pool then only reads.
     for example in examples:
+        schemas.rendered(example.db_id)
+
+    def score_one(example: SpiderExample) -> dict[str, Any]:
         example_started = time.monotonic()
         try:
             prediction = program(
@@ -119,20 +134,27 @@ def run_eval(spec: RunSpec, settings: Settings, *, lm: object | None = None) -> 
 
         outcome = metric.detailed(example.sql, example.db_id, pred_sql)
         prompt_tokens, completion_tokens = _usage_tokens(prediction) if prediction else (0, 0)
-        records.append(
-            {
-                "db_id": example.db_id,
-                "question": example.question,
-                "gold_sql": example.sql,
-                "pred_sql": pred_sql,
-                "program_failure": failure,
-                "latency_ms": round(latency_ms, 1),
-                "prompt_tokens": prompt_tokens,
-                "completion_tokens": completion_tokens,
-                "n_attempts": len(getattr(prediction, "attempts", []) or []) if prediction else 0,
-                **asdict(outcome),
-            }
-        )
+        return {
+            "db_id": example.db_id,
+            "question": example.question,
+            "gold_sql": example.sql,
+            "pred_sql": pred_sql,
+            "program_failure": failure,
+            "latency_ms": round(latency_ms, 1),
+            "prompt_tokens": prompt_tokens,
+            "completion_tokens": completion_tokens,
+            "n_attempts": len(getattr(prediction, "attempts", []) or []) if prediction else 0,
+            **asdict(outcome),
+        }
+
+    # dspy-facing orchestration: Any is honest here. Record order == example
+    # order regardless of thread scheduling (executor.map preserves it).
+    started = time.monotonic()
+    if spec.num_threads > 1:
+        with ThreadPoolExecutor(max_workers=spec.num_threads) as pool:
+            records: list[dict[str, Any]] = list(pool.map(score_one, examples))
+    else:
+        records = [score_one(example) for example in examples]
 
     total = len(records)
     prompt_total = sum(int(r["prompt_tokens"]) for r in records)
