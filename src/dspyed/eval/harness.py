@@ -39,6 +39,7 @@ class RunSpec:
     limit: int | None = None
     temperature: float = 0.0
     num_threads: int = 1  # >1 for live runs; tests stay sequential (DummyLM ordering)
+    artifact: str | None = None  # compiled state-dict JSON to load onto the program
 
     @classmethod
     def from_config(cls, path: Path) -> RunSpec:
@@ -109,6 +110,8 @@ def run_eval(spec: RunSpec, settings: Settings, *, lm: object | None = None) -> 
     schemas = _SchemaCache(database_root)
     metric = ExecutionAccuracy(executor)
     program = build_program(spec.program, executor, schemas.schema)
+    if spec.artifact is not None:
+        program.load(spec.artifact)  # compiled demos + instructions onto the same architecture
 
     examples = load_split(settings.data_root, settings.splits_dir, spec.split)
     if spec.limit is not None:

@@ -15,7 +15,6 @@ from pathlib import Path
 from dspyed import __version__
 
 _STUBS: dict[str, str] = {
-    "compile": "Phase 4 — optimize a program and save the artifact",
     "serve": "Phase 5 — run the FastAPI demo locally",
 }
 
@@ -42,6 +41,12 @@ def build_parser() -> argparse.ArgumentParser:
     evaluate.add_argument("--split", default="dev_eval_200")
     evaluate.add_argument("--limit", type=int, default=None, help="cap examples (smoke runs)")
     evaluate.add_argument("--threads", type=int, default=1, help="worker threads for live runs")
+    evaluate.add_argument("--artifact", default=None, help="compiled program state JSON to load")
+
+    compile_cmd = subparsers.add_parser("compile", help="optimize a program; save the artifact")
+    compile_cmd.add_argument("--experiment", required=True, help="artifact dir name, e.g. E07")
+    compile_cmd.add_argument("--optimizer", required=True, choices=("bfrs", "mipro", "gepa"))
+    compile_cmd.add_argument("--program", default="p3", choices=("p0", "p1", "p2", "p3"))
 
     report = subparsers.add_parser("report", help="regenerate README results table + figures")
     report.add_argument("--results-dir", type=Path, default=Path("experiments/results"))
@@ -83,6 +88,7 @@ def _cmd_eval(args: argparse.Namespace) -> int:
             split=args.split,
             limit=args.limit,
             num_threads=args.threads,
+            artifact=args.artifact,
         )
     else:
         print("eval needs either --config or (--experiment and --program)", file=sys.stderr)
@@ -110,6 +116,13 @@ def main(argv: list[str] | None = None) -> int:
         from dspyed.eval.report import generate
 
         print(json.dumps(generate(args.results_dir, args.figures_dir, args.readme), indent=2))
+        return 0
+    if args.command == "compile":
+        from dspyed.config import Settings
+        from dspyed.optim import compile_program
+
+        metadata = compile_program(args.experiment, args.optimizer, args.program, Settings())
+        print(json.dumps(metadata, indent=2))
         return 0
     print(
         f"dspyed {args.command}: not implemented yet ({_STUBS[args.command]})",
