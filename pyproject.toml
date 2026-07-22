@@ -17,7 +17,7 @@ dependencies = [
     "slowapi>=0.1.9",
     "sqlglot>=26",
     "tqdm>=4.66",
-    "uvicorn[standard]>=0.32",
+    "uvicorn[standard]>=0.51.0",
 ]
 
 [project.urls]
