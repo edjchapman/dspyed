@@ -1,0 +1,8 @@
+{
+ "experiment_id": "E03",
+ "program": "p2",
+ "model": "small",
+ "split": "dev_eval_200",
+ "temperature": 0.0,
+ "num_threads": 8
+}

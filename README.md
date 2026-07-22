@@ -13,6 +13,25 @@ execution accuracy against a committed train/dev split, with DSPy optimizers
 compiling the pipeline — and every reported number backed by a committed
 results JSON.
 
+## Results
+
+Regenerated from `experiments/results/` by `make report` — numbers never live
+in prose. Evaluated on `dev_eval_200` (200 questions, all 20 Spider dev DBs)
+unless stated. `$/100 q` and `p50` are marginal, as-executed values: configs
+sharing prompt prefixes hit DSPy's disk cache (e.g. P3 reuses P2's link +
+generate calls), which is exactly how a production deployment would behave.
+
+<!-- results:begin -->
+| Exp | Program | Model | Optimizer | Exec acc | Valid SQL | $/100 q | p50 |
+|---|---|---|---|---|---|---|---|
+| E01 | P0 zero-shot | Haiku 4.5 | — | **77.5%** | 99.5% | $0.07 | 0.9s |
+| E02 | P1 CoT | Haiku 4.5 | — | **75.0%** | 99.5% | $0.13 | 1.7s |
+| E03 | P2 +linking | Haiku 4.5 | — | **75.5%** | 99.5% | $0.17 | 2.5s |
+| E04 | P3 +repair | Haiku 4.5 | — | **75.5%** | 100.0% | $0.00 | 0.0s |
+<!-- results:end -->
+
+![Baseline ladder](reports/figures/fig_ladder.png)
+
 ## Quick start
 
 ```sh

@@ -14,7 +14,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_prefix="DSPYED_", env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_prefix="DSPYED_", env_file="../../.env", extra="ignore")
 
     small_model: str = "anthropic/claude-haiku-4-5-20251001"
     large_model: str = "anthropic/claude-sonnet-5"
@@ -32,12 +32,12 @@ class Settings(BaseSettings):
     budget_cap_usd: float = 150.0  # the plan's hard cap; compile refuses past it
 
 
-# USD per million tokens (prompt, completion) — checked against provider
-# pricing at the Phase 2 live smoke; cost numbers in results JSONs cite this
-# table, so a price change is a visible diff, not silent drift.
+# USD per million tokens (prompt, completion) — verified against litellm's
+# model_cost map at the C1 checkpoint (2026-07-22). Cost numbers in results
+# JSONs cite this table, so a price change is a visible diff, not silent drift.
 PRICES_PER_MTOK: Final[dict[str, tuple[float, float]]] = {
     "anthropic/claude-haiku-4-5-20251001": (1.0, 5.0),
-    "anthropic/claude-sonnet-5": (3.0, 15.0),
+    "anthropic/claude-sonnet-5": (2.0, 10.0),
 }
 
 

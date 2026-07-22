@@ -6,7 +6,7 @@
 # This file is yours now — edit freely. The most important edit is wiring your
 # stack's lint/test into `stack-check` (see the comment block below).
 
-.PHONY: help check check-links check-anchors stack-check data splits \
+.PHONY: help check check-links check-anchors stack-check data splits eval report \
         check-commit-msg check-stale-branches sweep-branches lint-md
 
 .DEFAULT_GOAL := help
@@ -46,6 +46,12 @@ data: ## Download + validate the Spider dataset (network, ~1 GB first run)
 
 splits: ## Build the seeded, committed example-id splits
 	@uv run dspyed splits
+
+eval: ## Run one experiment config, e.g. make eval EXP=E01
+	@uv run dspyed eval --config experiments/configs/$(EXP).json
+
+report: ## Regenerate the README results table + figures from committed results
+	@uv run --group analysis dspyed report
 
 # === On-demand (not part of make check) ===
 
