@@ -12,6 +12,7 @@ dependencies = [
     "fastapi>=0.115",
     "huggingface-hub>=0.30",
     "pydantic-settings>=2.6",
+    "python-dotenv>=1.0",
     "slowapi>=0.1.9",
     "sqlglot>=26",
     "tqdm>=4.66",
@@ -73,10 +74,11 @@ venvPath = "."
 venv = ".venv"
 include = ["src", "tests"]
 typeCheckingMode = "basic"
-# The measurement instruments are held to strict — a type hole in the executor or
-# the result-set comparison is a wrong headline number. DSPy-facing code stays
-# basic with narrow ignores at the boundary (dspy is loosely typed).
-strict = ["src/dspyed/engine", "src/dspyed/eval"]
+# The measurement instruments are held to strict — a type hole in the executor,
+# the comparison, or the metric is a wrong headline number. DSPy-facing code
+# (pipeline/, optim/, the eval harness orchestration) stays basic: dspy is
+# loosely typed, so strictness there would only breed ignore-comments.
+strict = ["src/dspyed/engine", "src/dspyed/eval/metric.py"]
 reportMissingTypeStubs = false
 
 [tool.pytest.ini_options]
@@ -89,4 +91,9 @@ markers = [
 ]
 # Warnings are errors, so a deprecated API or a misconfigured test fails loudly.
 # Add module-scoped ignores ONLY for genuine third-party deprecations we don't own.
-filterwarnings = ["error"]
+filterwarnings = [
+    "error",
+    # dspy's own avatar module trips dspy's own InputField 'prefix' deprecation at
+    # import time — third-party internal churn, nothing we call.
+    "ignore:The 'prefix' argument in InputField/OutputField is deprecated:DeprecationWarning",
+]
