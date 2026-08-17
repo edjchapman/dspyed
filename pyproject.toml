@@ -8,16 +8,16 @@ license-files = ["LICENSE"]
 requires-python = ">=3.12"
 authors = [{ name = "Ed Chapman" }]
 dependencies = [
-    "dspy>=3.0",
-    "fastapi>=0.140.0",
-    "huggingface-hub>=0.30",
+    "dspy>=3.3.0",
+    "fastapi>=0.141.1",
+    "huggingface-hub>=1.27.0",
     "optuna>=4.9.0",
-    "pydantic-settings>=2.6",
+    "pydantic-settings>=2.15.0",
     "python-dotenv>=1.0",
     "slowapi>=0.1.9",
-    "sqlglot>=26",
-    "tqdm>=4.69.1",
-    "uvicorn[standard]>=0.51.0",
+    "sqlglot>=30.17.0",
+    "tqdm>=4.70.0",
+    "uvicorn[standard]>=0.52.3",
 ]
 
 [project.urls]
@@ -29,12 +29,12 @@ dspyed = "dspyed.cli:main"
 [dependency-groups]
 dev = [
     "httpx>=0.28",
-    "httpx2>=2.9.1",
-    "pyarrow>=18", # `dspyed download` only: parquet → JSON conversion, never at runtime
+    "httpx2>=2.10.0",
+    "pyarrow>=25.0.1", # `dspyed download` only: parquet → JSON conversion, never at runtime
     "pyright>=1.1.390",
     "pytest>=8.3",
     "pytest-socket>=0.7",
-    "ruff>=0.16.0",
+    "ruff>=0.16.3",
 ]
 # Figures are regenerated on demand (`make report`), not needed at runtime or in CI.
 analysis = ["matplotlib>=3.9"]
